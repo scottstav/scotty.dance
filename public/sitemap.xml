@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://scotty.dance/post/coursework/</loc>
+    <lastmod>2016-12-28T12:32:14-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scotty.dance/post/kendama/</loc>
+    <lastmod>2016-12-28T12:10:48-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scotty.dance/post/Norichan/</loc>
+    <lastmod>2016-12-28T11:49:04-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scotty.dance/post/welcome/</loc>
+    <lastmod>2016-12-27T11:18:40-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scotty.dance/about/</loc>
+    <lastmod>2016-12-27T11:11:27-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scotty.dance/post/</loc>
+    <lastmod>2016-12-28T12:32:14-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://scotty.dance/</loc>
+    <lastmod>2016-12-28T12:32:14-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
