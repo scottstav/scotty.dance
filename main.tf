@@ -5,17 +5,25 @@ module "mailer" {
 }
 
 resource "aws_route53_record" "root" {
-   zone_id = "${module.mailer.zone_id}"
-   name = "${var.domain}"
-   type = "A"
-   ttl = "300"
-   records = ["s3-website-us-east-1.amazonaws.com."]
+  zone_id = "${module.mailer.zone_id}"
+  name = "${var.domain}"
+  type = "A"
+  ttl = "300"
+  alias {
+    name = "s3-website-us-east-1.amazonaws.com."
+    zone_id = "Z3AQBSTGFYJSTF"
+    evaluate_target_health = false
+  }
 }
 
 resource "aws_route53_record" "www" {
-   zone_id = "${module.mailer.zone_id}"
-   name = "www.${var.domain}"
-   type = "A"
-   ttl = "300"
-   records = ["s3-website-us-east-1.amazonaws.com."]
+  zone_id = "${module.mailer.zone_id}"
+  name = "www.${var.domain}"
+  type = "A"
+  ttl = "300"
+  alias {
+    name = "s3-website-us-east-1.amazonaws.com."
+    zone_id = "Z3AQBSTGFYJSTF"
+    evaluate_target_health = false
+  }
 }
