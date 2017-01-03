@@ -6,7 +6,7 @@ draft = "false"
 +++
 
 # Group Theory and Error Control Codes
-Tasked with finding a practical application of group thoery, I chose to do a brief exploration of error-control codes in algebraic coding theory. 
+Tasked with finding a practical application of group thoery, I chose to do a brief exploration. 
 
 [write-up]({{< ref "#write-up" >}})
 
