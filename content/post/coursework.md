@@ -1,18 +1,22 @@
 +++
 date = "2016-12-28T12:32:14-06:00"
-description = "the stuff I like"
-title = "School Stuff"
+description = "Modern Abstract Algebra (MAT 4233) final project"
+title = "Algebraic Coding Thoery"
 draft = "false"
 +++
 
 # Group Theory and Error Control Codes
-### Moder Abstract Algebra
+Tasked with finding a practical application of group thoery, I chose to do a brief exploration of error-control codes in algebraic coding theory. 
 
-<embed src="./coding_thoery.pdf" width="800px" height="2100px" />
-content here
+[write-up]({{< ref "#write-up" >}})
 
-# Code Blocks (Java game)
-### Applications Programming
+[presentation]({{< ref "#presentation" >}}) 
 
-java applet here
 
+# Presentation 
+
+<embed src="http://scotty.dance/coding_thoery.pdf" width="800px" height="1000px" />
+
+# Write Up
+
+<embed src="http://scotty.dance/algebraic_coding_thoery_pdf.pdf" width="800px" height="1000px" />

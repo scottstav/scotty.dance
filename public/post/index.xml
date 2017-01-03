@@ -10,7 +10,7 @@
     <atom:link href="http://scotty.dance/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>School Stuff</title>
+      <title>Algebraic Coding Thoery</title>
       <link>http://scotty.dance/post/coursework/</link>
       <pubDate>Wed, 28 Dec 2016 12:32:14 -0600</pubDate>
       
@@ -19,16 +19,19 @@
 
 &lt;h1 id=&#34;group-theory-and-error-control-codes&#34;&gt;Group Theory and Error Control Codes&lt;/h1&gt;
 
-&lt;h3 id=&#34;moder-abstract-algebra&#34;&gt;Moder Abstract Algebra&lt;/h3&gt;
+&lt;p&gt;Tasked with finding a practical application of group thoery, I chose to do a brief exploration of error-control codes in algebraic coding theory.&lt;/p&gt;
 
-&lt;p&gt;&lt;embed src=&#34;./coding_thoery.pdf&#34; width=&#34;800px&#34; height=&#34;2100px&#34; /&gt;
-content here&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#write-up&#34;&gt;write-up&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;code-blocks-java-game&#34;&gt;Code Blocks (Java game)&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;#presentation&#34;&gt;presentation&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;applications-programming&#34;&gt;Applications Programming&lt;/h3&gt;
+&lt;h1 id=&#34;presentation&#34;&gt;Presentation&lt;/h1&gt;
 
-&lt;p&gt;java applet here&lt;/p&gt;
+&lt;p&gt;&lt;embed src=&#34;http://scotty.dance/coding_thoery.pdf&#34; width=&#34;800px&#34; height=&#34;1000px&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;write-up&#34;&gt;Write Up&lt;/h1&gt;
+
+&lt;p&gt;&lt;embed src=&#34;http://scotty.dance/algebraic_coding_thoery_pdf.pdf&#34; width=&#34;800px&#34; height=&#34;1000px&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -40,8 +43,7 @@ content here&lt;/p&gt;
       <guid>http://scotty.dance/post/kendama/</guid>
       <description>
 
-&lt;h1 id=&#34;kendama-hahahugoshortcode-1hbhb-is-a-japanese-skill-toy&#34;&gt;&lt;a href=&#34;No page found with path or logical name &#34;/wiki/Kendama&#34;.
-&#34;&gt;kendama&lt;/a&gt; is a Japanese skill toy.&lt;/h1&gt;
+&lt;h1 id=&#34;kendama-is-a-japanese-skill-toy&#34;&gt;kendama is a Japanese skill toy.&lt;/h1&gt;
 
 &lt;h1 id=&#34;i-have-been-playing-for-a-couple-of-years-and-i-document-my-progress-here&#34;&gt;I have been playing for a couple of years and I document my progress here.&lt;/h1&gt;
 

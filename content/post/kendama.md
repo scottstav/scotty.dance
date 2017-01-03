@@ -6,9 +6,8 @@ draft = "false"
 
 +++
 
-# [kendama]({{< ref "https://en.wikipedia.org/wiki/Kendama" >}}) is a Japanese skill toy. 
+# kendama is a Japanese skill toy. 
 # I have been playing for a couple of years and I document my progress here.
-
 
 {{< youtube C1jliEZPuJk >}}
 ## Ashville Living Room + Santa Elena Canyon
