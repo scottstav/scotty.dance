@@ -13,6 +13,7 @@ disqusShortname = ""
 	name = "Scott Stavinoha"
 	description = ""
 	bio = "CS Student . Nori the dog . けん玉 "
+	email = "howdy@scotty.dance"
 	# Enter optionally your twitter account
 	#twitter = "Your Twitter account"
 	enableRSS = false
