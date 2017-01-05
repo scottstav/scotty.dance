@@ -12,7 +12,7 @@ disqusShortname = ""
 [params]
 	name = "Scott Stavinoha"
 	description = ""
-	bio = "CS Student . Nori the dog . けん玉"
+	bio = "CS Student . Nori the dog . けん玉 "
 	# Enter optionally your twitter account
 	#twitter = "Your Twitter account"
 	enableRSS = false
@@ -35,7 +35,7 @@ disqusShortname = ""
 	copyright = ""
 	# Sharing options and author information in posts
 	aboutAuthor = ""
-	tweet = ""
+	tweet = "scott did a thing"
 	share = ""
 	# 404 page
 	title404 = ""

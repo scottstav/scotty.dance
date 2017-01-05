@@ -5,7 +5,7 @@ draft = false
 
 +++
 
- # some things about me
+ # brief introdution
 
  * I study Computer Science at The University of Texas at San Antonio
  * AppleCare At-Home Advisor ~~professional Googler~~

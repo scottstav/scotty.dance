@@ -6,7 +6,7 @@ draft = "false"
 +++
 
 # Group Theory and Error Control Codes
-Tasked with finding a practical application of group thoery, I chose to do a brief exploration. 
+Tasked with finding a practical application of group thoery, I chose to do a brief exploration of error-control codes. 
 
 [write-up]({{< ref "#write-up" >}})
 
@@ -15,8 +15,8 @@ Tasked with finding a practical application of group thoery, I chose to do a bri
 
 # Presentation 
 
-<embed src="http://scotty.dance/coding_thoery.pdf" width="800px" height="1000px" />
+<embed src="/docs/coding_thoery.pdf" width="800px" height="1000px" />
 
 # Write Up
 
-<embed src="http://scotty.dance/algebraic_coding_thoery_pdf.pdf" width="800px" height="1000px" />
+<embed src="/docs/algebraic_coding_thoery.pdf" width="800px" height="1000px" />

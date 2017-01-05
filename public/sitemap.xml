@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://scotty.dance/post/hsh/</loc>
+    <lastmod>2017-01-04T18:52:17-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scotty.dance/post/cache_sim/</loc>
+    <lastmod>2017-01-04T18:52:05-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://scotty.dance/post/code_blocks/</loc>
+    <lastmod>2017-01-04T18:51:50-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://scotty.dance/post/coursework/</loc>
     <lastmod>2016-12-28T12:32:14-06:00</lastmod>
   </url>
@@ -28,13 +43,13 @@
   
   <url>
     <loc>http://scotty.dance/post/</loc>
-    <lastmod>2016-12-28T12:32:14-06:00</lastmod>
+    <lastmod>2017-01-04T18:52:17-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://scotty.dance/</loc>
-    <lastmod>2016-12-28T12:32:14-06:00</lastmod>
+    <lastmod>2017-01-04T18:52:17-06:00</lastmod>
     <priority>0</priority>
   </url>
   
