@@ -1,9 +1,8 @@
 +++
 description = "kendama"
 title = "けん玉"
-date = "2016-12-28T12:10:48-06:00"
 draft = "false"
-
+date = "2017-01-04"
 +++
 
 # kendama is a Japanese skill toy. 

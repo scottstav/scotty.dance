@@ -2,100 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on scott stavinoha</title>
-    <link>http://scotty.dance/post/index.xml</link>
+    <link>https://scotty.dance/post/index.xml</link>
     <description>Recent content in Posts on scott stavinoha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Jan 2017 18:52:17 -0600</lastBuildDate>
-    <atom:link href="http://scotty.dance/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>hsh</title>
-      <link>http://scotty.dance/post/hsh/</link>
-      <pubDate>Wed, 04 Jan 2017 18:52:17 -0600</pubDate>
-      
-      <guid>http://scotty.dance/post/hsh/</guid>
-      <description>
-
-&lt;h1 id=&#34;hsh&#34;&gt;&lt;strong&gt;hsh&lt;/strong&gt;&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;final assignement for systems programming.&lt;/li&gt;
-&lt;li&gt;capable of basic piping, backgrounding, and io operations.&lt;/li&gt;
-&lt;li&gt;download the &lt;a href=&#34;http://scotty.dance/hsh/hsh-1.0.tar.gz&#34;&gt;tarball&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;tar -zxvf hsh-1.0.tar.gz
-./configure
-make
-hsh
-&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/scottstav/hsh&#34;&gt;source code&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Cache Simulator</title>
-      <link>http://scotty.dance/post/cache_sim/</link>
-      <pubDate>Wed, 04 Jan 2017 18:52:05 -0600</pubDate>
-      
-      <guid>http://scotty.dance/post/cache_sim/</guid>
-      <description>
-
-&lt;h1 id=&#34;cache-simulator&#34;&gt;&lt;strong&gt;Cache Simulator&lt;/strong&gt;&lt;/h1&gt;
-
-&lt;p&gt;example input (memory addresses in hex):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;65604
-65669
-0x40456
-0x100b1
-0x30456
-0x300b1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;simulates memory requests and prints information about cache hits/misses.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;to run:&lt;/strong&gt; download the &lt;a href=&#34;http://scotty.dance/cache_sim/cachesim2.zip&#34;&gt;zip file&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;java -jar CacheSim.jar 17 4 3 lru on memory-small.txt&lt;/code&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;arg 1: cache size [log base 2]&lt;/li&gt;
-&lt;li&gt;arg 2: block size [log base 2]&lt;/li&gt;
-&lt;li&gt;arg 3: set &lt;a href=&#34;http://csillustrated.berkeley.edu/PDFs/handouts/cache-3-associativity-handout.pdf&#34;&gt;associativity&lt;/a&gt; [log base 2]&lt;/li&gt;
-&lt;li&gt;arg 4: cache miss behavior [fifo, lru]&lt;/li&gt;
-&lt;li&gt;arg 5: verbose output [on, off]&lt;/li&gt;
-&lt;li&gt;arg 6: input file containing memory addresses&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&amp;nbsp;
-&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;other stuff found in the zip file&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;a nasty perl script that can be used for address generation&lt;/li&gt;
-&lt;li&gt;a random index and offset generator&lt;/li&gt;
-&lt;li&gt;i used them like this to create an address_gen.txt input file:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ create | generator&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/scottstav/cache-sim&#34;&gt;source code&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
+    <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://scotty.dance/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Typing Game</title>
-      <link>http://scotty.dance/post/code_blocks/</link>
-      <pubDate>Wed, 04 Jan 2017 18:51:50 -0600</pubDate>
+      <link>https://scotty.dance/post/code_blocks/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://scotty.dance/post/code_blocks/</guid>
+      <guid>https://scotty.dance/post/code_blocks/</guid>
       <description>
 
 &lt;h1 id=&#34;typing-game-formerly-code-blocks&#34;&gt;Typing Game (formerly Code Blocks)&lt;/h1&gt;
@@ -108,7 +27,7 @@ hsh
 
 &lt;ul&gt;
 &lt;li&gt;have java installed&lt;/li&gt;
-&lt;li&gt;download the &lt;a href=&#34;http://scotty.dance/code_blocks/code_blocks.zip&#34;&gt;zip file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;download the &lt;a href=&#34;https://scotty.dance/code_blocks/code_blocks.zip&#34;&gt;zip file&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;run code_blocks_2.jar&lt;/li&gt;
 &lt;li&gt;start game and type the words to ward off the ships&lt;/li&gt;
 &lt;/ul&gt;
@@ -130,37 +49,11 @@ hsh
     </item>
     
     <item>
-      <title>Algebraic Coding Thoery</title>
-      <link>http://scotty.dance/post/coursework/</link>
-      <pubDate>Wed, 28 Dec 2016 12:32:14 -0600</pubDate>
-      
-      <guid>http://scotty.dance/post/coursework/</guid>
-      <description>
-
-&lt;h1 id=&#34;group-theory-and-error-control-codes&#34;&gt;Group Theory and Error Control Codes&lt;/h1&gt;
-
-&lt;p&gt;Tasked with finding a practical application of group thoery, I chose to do a brief exploration of error-control codes.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;#write-up&#34;&gt;write-up&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;#presentation&#34;&gt;presentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;presentation&#34;&gt;Presentation&lt;/h1&gt;
-
-&lt;p&gt;&lt;embed src=&#34;http://scotty.dance/docs/coding_thoery.pdf&#34; width=&#34;800px&#34; height=&#34;1000px&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;write-up&#34;&gt;Write Up&lt;/h1&gt;
-
-&lt;p&gt;&lt;embed src=&#34;http://scotty.dance/docs/algebraic_coding_thoery.pdf&#34; width=&#34;800px&#34; height=&#34;1000px&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>けん玉</title>
-      <link>http://scotty.dance/post/kendama/</link>
-      <pubDate>Wed, 28 Dec 2016 12:10:48 -0600</pubDate>
+      <link>https://scotty.dance/post/kendama/</link>
+      <pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://scotty.dance/post/kendama/</guid>
+      <guid>https://scotty.dance/post/kendama/</guid>
       <description>
 
 &lt;h1 id=&#34;kendama-is-a-japanese-skill-toy&#34;&gt;kendama is a Japanese skill toy.&lt;/h1&gt;
@@ -225,11 +118,37 @@ hsh
     </item>
     
     <item>
-      <title>Norichan</title>
-      <link>http://scotty.dance/post/Norichan/</link>
-      <pubDate>Wed, 28 Dec 2016 11:49:04 -0600</pubDate>
+      <title>Algebraic Coding Thoery</title>
+      <link>https://scotty.dance/post/coursework/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://scotty.dance/post/Norichan/</guid>
+      <guid>https://scotty.dance/post/coursework/</guid>
+      <description>
+
+&lt;h1 id=&#34;group-theory-and-error-control-codes&#34;&gt;Group Theory and Error Control Codes&lt;/h1&gt;
+
+&lt;p&gt;Tasked with finding a practical application of group thoery, I chose to do a brief exploration of error-control codes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;#write-up&#34;&gt;write-up&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;#presentation&#34;&gt;presentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;presentation&#34;&gt;Presentation&lt;/h1&gt;
+
+&lt;p&gt;&lt;embed src=&#34;https://scotty.dance/docs/coding_thoery.pdf&#34; width=&#34;800px&#34; height=&#34;1000px&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;write-up&#34;&gt;Write Up&lt;/h1&gt;
+
+&lt;p&gt;&lt;embed src=&#34;https://scotty.dance/docs/algebraic_coding_thoery.pdf&#34; width=&#34;800px&#34; height=&#34;1000px&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Norichan</title>
+      <link>https://scotty.dance/post/Norichan/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://scotty.dance/post/Norichan/</guid>
       <description>
 
 &lt;h2 id=&#34;nori-is-a-blue-heeler&#34;&gt;Nori is a blue heeler&lt;/h2&gt;
@@ -239,7 +158,7 @@ hsh
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/C4633651-3E80-4672-89FF-6FF89BE3F296.JPG&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/C4633651-3E80-4672-89FF-6FF89BE3F296.JPG&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -247,7 +166,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0033.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0033.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -255,7 +174,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0067.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0067.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -263,7 +182,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0120.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0120.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -271,7 +190,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0192.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0192.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -279,7 +198,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0208.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0208.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -287,7 +206,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0230.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0230.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -295,7 +214,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0320.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0320.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -303,7 +222,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0323.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0323.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -311,7 +230,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0327.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0327.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -319,7 +238,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0342.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0342.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -327,7 +246,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0434.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0434.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -335,7 +254,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0453-MOTION.gif&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0453-MOTION.gif&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -343,7 +262,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0500.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0500.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -351,7 +270,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0521.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0521.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -359,7 +278,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0557.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0557.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -367,7 +286,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0566.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0566.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -375,7 +294,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0571.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0571.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -383,7 +302,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0756.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0756.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -391,7 +310,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMAG0761.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0761.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -399,7 +318,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMG_0276.JPG&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_0276.JPG&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -407,7 +326,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMG_0394-ANIMATION.gif&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_0394-ANIMATION.gif&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -415,7 +334,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMG_0500.JPG&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_0500.JPG&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -423,7 +342,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMG_0662.JPG&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_0662.JPG&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -431,7 +350,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMG_0699.JPG&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_0699.JPG&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -439,7 +358,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMG_0733.JPG&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_0733.JPG&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -447,7 +366,7 @@ hsh
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://scotty.dance/noripics/IMG_20150112_154129.jpg&#34; /&gt;
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_20150112_154129.jpg&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -456,15 +375,83 @@ hsh
     </item>
     
     <item>
-      <title>welcome</title>
-      <link>http://scotty.dance/post/welcome/</link>
-      <pubDate>Tue, 27 Dec 2016 11:18:40 -0600</pubDate>
+      <title>Cache Simulator</title>
+      <link>https://scotty.dance/post/cache_sim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://scotty.dance/post/welcome/</guid>
-      <description>&lt;p&gt;this is my first post&lt;/p&gt;
+      <guid>https://scotty.dance/post/cache_sim/</guid>
+      <description>
 
-&lt;p&gt;&lt;a href=&#34;No page found with path or logical name &#34;/content/about.md&#34;.
-&#34;&gt;nothing to see here&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;cache-simulator&#34;&gt;&lt;strong&gt;Cache Simulator&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;example input (memory addresses in hex):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;65604
+65669
+0x40456
+0x100b1
+0x30456
+0x300b1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;simulates memory requests and prints information about cache hits/misses.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;to run:&lt;/strong&gt; download the &lt;a href=&#34;https://scotty.dance/cache_sim/cachesim2.zip&#34;&gt;zip file&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;java -jar CacheSim.jar 17 4 3 lru on memory-small.txt&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;arg 1: cache size [log base 2]&lt;/li&gt;
+&lt;li&gt;arg 2: block size [log base 2]&lt;/li&gt;
+&lt;li&gt;arg 3: set &lt;a href=&#34;http://csillustrated.berkeley.edu/PDFs/handouts/cache-3-associativity-handout.pdf&#34;&gt;associativity&lt;/a&gt; [log base 2]&lt;/li&gt;
+&lt;li&gt;arg 4: cache miss behavior [fifo, lru]&lt;/li&gt;
+&lt;li&gt;arg 5: verbose output [on, off]&lt;/li&gt;
+&lt;li&gt;arg 6: input file containing memory addresses&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;nbsp;
+&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;other stuff found in the zip file&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a nasty perl script that can be used for address generation&lt;/li&gt;
+&lt;li&gt;a random index and offset generator&lt;/li&gt;
+&lt;li&gt;i used them like this to create an address_gen.txt input file:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ create | generator&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/scottstav/cache-sim&#34;&gt;source code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hsh</title>
+      <link>https://scotty.dance/post/hsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scotty.dance/post/hsh/</guid>
+      <description>
+
+&lt;h1 id=&#34;hsh&#34;&gt;&lt;strong&gt;hsh&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;final assignement for systems programming.&lt;/li&gt;
+&lt;li&gt;capable of basic piping, backgrounding, and io operations.&lt;/li&gt;
+&lt;li&gt;download the &lt;a href=&#34;https://scotty.dance/hsh/hsh-1.0.tar.gz&#34;&gt;tarball&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;tar -zxvf hsh-1.0.tar.gz
+./configure
+make
+hsh
+&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/scottstav/hsh&#34;&gt;source code&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

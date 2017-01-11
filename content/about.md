@@ -1,5 +1,5 @@
 +++
-date = "2016-12-27T11:11:27-06:00"
+date = ""
 title = "about"
 draft = false
 
@@ -8,7 +8,7 @@ draft = false
  # brief introduction
 
  * I study Computer Science at The University of Texas at San Antonio
- * AppleCare At-Home Advisor ~~professional Googler~~
+ * AppleCare At-Home Advisor 
  * here are a **whole** bunch of pics of my [dog]({{< relref "Norichan.md" >}})
- * I play with [toys]({{< relref "kendama.md" >}})
+ * I play [kendama]({{< relref "kendama.md" >}})
  

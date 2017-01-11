@@ -1,7 +1,6 @@
 +++
-date = "2016-12-27T11:18:40-06:00"
 title = "welcome"
-draft = false
+draft = true
 showcomments = false
 slug = ""
 comments = false

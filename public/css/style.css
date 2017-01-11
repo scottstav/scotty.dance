@@ -68,7 +68,10 @@ h2 {
 	font: italic 19px/1.3em Georgia,serif;
 	color: #bbb;
 }
+.profile {
 
+	background-color: #E0FFFF
+}
 .profile #wrapper {
 	padding: 100px 40px 0px;
 	max-width: 600px;
@@ -85,8 +88,8 @@ h2 {
 
 .profile #avatar {
 	display: inline-block;
-	width: 80px;
-	height: 80px;
+	width: 120px;
+	height: 120px;
 	border-radius: 50%;
 	margin-bottom: 20px;
 }
@@ -100,11 +103,22 @@ h2 {
 
 .profile h2 {
 	font-size: 20px;
-	  font-weight: 300;
+	  font-weight: 400;
 	  color: #aaa;
 	  margin-top: 10px;
 	  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	  font-style: normal;
+
+}
+
+.profile h3 {
+	font-size: 20px;
+	  font-weight: bold;
+	  margin-top: 10px;
+	  font-family: "Courier New", Courier, monospace;
+	  font-style: normal;
+	  display: inline-block;
+      text-align: center;
 
 }
 
@@ -119,23 +133,28 @@ nav.main-nav {
 	text-align: right;
 	/*position: fixed;*/
 	z-index: 100;
+	background-color: #E0FFFF
+
 }
 
 nav.main-nav a {
 	top: 8px;
 	right: 6px;
+	font-weight: 600;
 	padding: 8px 12px;
-	color: #5badf0;
+	color: #00008B;
 	font-size: 13px;
 	/*font-weight: bold;*/
 	line-height: 1.35;
 	border-radius: 3px;
+	background-color: #ADD8E6
 
 }
 nav.main-nav a.cta {
 	background: #5badf0;
 	color: #fff;
 	margin-left: 12px;
+
 }
 
 #wrapper {
@@ -221,6 +240,8 @@ em, i { font-style: italic; }
 	color: #bbb;
 }
 
+
+}
 .post header {
 	text-align:center;
 

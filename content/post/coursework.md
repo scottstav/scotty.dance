@@ -1,8 +1,9 @@
 +++
-date = "2016-12-28T12:32:14-06:00"
 description = "Modern Abstract Algebra (MAT 4233) final project"
 title = "Algebraic Coding Thoery"
 draft = "false"
+date = "2017-01-03"
+
 +++
 
 # Group Theory and Error Control Codes

@@ -1,8 +1,8 @@
 +++
-date = "2017-01-04T18:51:50-06:00"
 description = "Java typing game to save the world"
 title = "Typing Game"
 draft = "false"
+date = "2017-01-05"
 
 +++
 
