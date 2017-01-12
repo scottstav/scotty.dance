@@ -1,0 +1,2 @@
+hugo -b "https://scotty.dance" --theme=hugo-cactus-theme
+s3cmd put -P --recursive ./public/ s3://scotty.dance

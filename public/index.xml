@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scott stavinoha</title>
+    <link>https://scotty.dance/index.xml</link>
+    <description>Recent content on scott stavinoha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://scotty.dance/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Typing Game</title>
+      <link>https://scotty.dance/post/code_blocks/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://scotty.dance/post/code_blocks/</guid>
+      <description>
+
+&lt;h1 id=&#34;typing-game-formerly-code-blocks&#34;&gt;Typing Game (formerly Code Blocks)&lt;/h1&gt;
+
+&lt;p&gt;this game used to be called Code Blocks. but now it uses words from &lt;a href=&#34;http://www.puzzlers.org/pub/wordlists/pocket.txt&#34;&gt;http://www.puzzlers.org/pub/wordlists/pocket.txt&lt;/a&gt; instead of lines of code so that name doesn&amp;rsquo;t really make sense.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;team:&lt;/strong&gt; &lt;a href=&#34;https://github.com/kurtaking&#34;&gt;kurt king&lt;/a&gt;, &lt;a href=&#34;https://github.com/PacoHuerta&#34;&gt;paco huerta&lt;/a&gt;, &lt;a href=&#34;https://github.com/susan-taylor&#34;&gt;susan taylor&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-play&#34;&gt;How to Play&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;have java installed&lt;/li&gt;
+&lt;li&gt;download the &lt;a href=&#34;https://scotty.dance/code_blocks/code_blocks.zip&#34;&gt;zip file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;run code_blocks_2.jar&lt;/li&gt;
+&lt;li&gt;start game and type the words to ward off the ships&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;when-the-boss-arrives&#34;&gt;&lt;strong&gt;when the boss arrives&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;* type the words that appear under the bosses ship
+* be sure to defend yourself from the bosses lasers
+* defeat the boss and gain 1 of 3 power ups 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;type &amp;ldquo;power up&amp;rdquo; in the text box to use the power up&lt;/li&gt;
+&lt;li&gt;see how many points you can get!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/scottstav/cs3443Game&#34;&gt;source code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>けん玉</title>
+      <link>https://scotty.dance/post/kendama/</link>
+      <pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://scotty.dance/post/kendama/</guid>
+      <description>
+
+&lt;h1 id=&#34;kendama-is-a-japanese-skill-toy&#34;&gt;kendama is a Japanese skill toy.&lt;/h1&gt;
+
+&lt;h1 id=&#34;i-have-been-playing-for-a-couple-of-years-and-i-document-my-progress-here&#34;&gt;I have been playing for a couple of years and I document my progress here.&lt;/h1&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/C1jliEZPuJk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;h2 id=&#34;ashville-living-room-santa-elena-canyon&#34;&gt;Ashville Living Room + Santa Elena Canyon&lt;/h2&gt;
+
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/cmCPUfnZoc0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/hLmGV-a9wBQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;passing-time-on-campus&#34;&gt;Passing time on campus&lt;/h2&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/HNPb9GsLzNE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;h2 id=&#34;fun-with-new-phone&#34;&gt;fun with new phone&lt;/h2&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/IRXrSTAu690&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;h2 id=&#34;juggles-lighthouse&#34;&gt;juggles! lighthouse!&lt;/h2&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/FZ7afAcbpkA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;h2 id=&#34;around-the-world-juggle-on-the-selfie-cam&#34;&gt;around the world (juggle) on the selfie cam&lt;/h2&gt;
+
+&lt;blockquote class=&#34;instagram-media&#34; data-instgrm-version=&#34;7&#34; style=&#34; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&#34;&gt;&lt;div style=&#34;padding:8px;&#34;&gt; &lt;div style=&#34; background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;&#34;&gt; &lt;div style=&#34; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;p style=&#34; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&#34;&gt;&lt;a href=&#34;https://www.instagram.com/p/6vxYRLtXP_/&#34; style=&#34; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;&#34; target=&#34;_blank&#34;&gt;A video posted by @carpenotty&lt;/a&gt; on &lt;time style=&#34; font-family:Arial,sans-serif; font-size:14px; line-height:17px;&#34; datetime=&#34;2015-08-24T00:43:40+00:00&#34;&gt;Aug 23, 2015 at 5:43pm PDT&lt;/time&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;
+&lt;script async defer src=&#34;//platform.instagram.com/en_US/embeds.js&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;12-30-15&#34;&gt;12/30/15&lt;/h2&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;instagram-media&#34; data-instgrm-version=&#34;7&#34; style=&#34; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&#34;&gt;&lt;div style=&#34;padding:8px;&#34;&gt; &lt;div style=&#34; background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;&#34;&gt; &lt;div style=&#34; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;p style=&#34; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&#34;&gt;&lt;a href=&#34;https://www.instagram.com/p/_77JoDtXLC/&#34; style=&#34; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;&#34; target=&#34;_blank&#34;&gt;A video posted by @carpenotty&lt;/a&gt; on &lt;time style=&#34; font-family:Arial,sans-serif; font-size:14px; line-height:17px;&#34; datetime=&#34;2015-12-31T00:36:54+00:00&#34;&gt;Dec 30, 2015 at 4:36pm PST&lt;/time&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;
+&lt;script async defer src=&#34;//platform.instagram.com/en_US/embeds.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;08-23-15&#34;&gt;08/23/15&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Algebraic Coding Thoery</title>
+      <link>https://scotty.dance/post/coursework/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://scotty.dance/post/coursework/</guid>
+      <description>
+
+&lt;h1 id=&#34;group-theory-and-error-control-codes&#34;&gt;Group Theory and Error Control Codes&lt;/h1&gt;
+
+&lt;p&gt;Tasked with finding a practical application of group thoery, I chose to do a brief exploration of error-control codes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;#write-up&#34;&gt;write-up&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;#presentation&#34;&gt;presentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;presentation&#34;&gt;Presentation&lt;/h1&gt;
+
+&lt;p&gt;&lt;embed src=&#34;https://scotty.dance/docs/coding_thoery.pdf&#34; width=&#34;800px&#34; height=&#34;1000px&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;write-up&#34;&gt;Write Up&lt;/h1&gt;
+
+&lt;p&gt;&lt;embed src=&#34;https://scotty.dance/docs/algebraic_coding_thoery.pdf&#34; width=&#34;800px&#34; height=&#34;1000px&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Norichan</title>
+      <link>https://scotty.dance/post/Norichan/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://scotty.dance/post/Norichan/</guid>
+      <description>
+
+&lt;h2 id=&#34;nori-is-a-blue-heeler&#34;&gt;Nori is a blue heeler&lt;/h2&gt;
+
+&lt;h2 id=&#34;i-take-a-lot-of-pictures-of-her-and-need-somewhere-to-put-them&#34;&gt;I take a lot of pictures of her and need somewhere to put them&lt;/h2&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/C4633651-3E80-4672-89FF-6FF89BE3F296.JPG&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0033.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0067.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0120.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0192.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0208.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0230.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0320.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0323.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0327.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0342.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0434.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0453-MOTION.gif&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0500.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0521.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0557.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0566.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0571.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0756.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMAG0761.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_0276.JPG&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_0394-ANIMATION.gif&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_0500.JPG&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_0662.JPG&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_0699.JPG&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_0733.JPG&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://scotty.dance/noripics/IMG_20150112_154129.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>https://scotty.dance/about/</link>
+      <pubDate>Tue, 27 Dec 2016 11:11:27 -0600</pubDate>
+      
+      <guid>https://scotty.dance/about/</guid>
+      <description>
+
+&lt;h1 id=&#34;brief-introduction&#34;&gt;brief introduction&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I study Computer Science at The University of Texas at San Antonio&lt;/li&gt;
+&lt;li&gt;AppleCare At-Home Advisor&lt;/li&gt;
+&lt;li&gt;here are a &lt;strong&gt;whole&lt;/strong&gt; bunch of pics of my &lt;a href=&#34;https://scotty.dance/post/Norichan/&#34;&gt;dog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I play &lt;a href=&#34;https://scotty.dance/post/kendama/&#34;&gt;kendama&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cache Simulator</title>
+      <link>https://scotty.dance/post/cache_sim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scotty.dance/post/cache_sim/</guid>
+      <description>
+
+&lt;h1 id=&#34;cache-simulator&#34;&gt;&lt;strong&gt;Cache Simulator&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;example input (memory addresses in hex):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;65604
+65669
+0x40456
+0x100b1
+0x30456
+0x300b1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;simulates memory requests and prints information about cache hits/misses.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;to run:&lt;/strong&gt; download the &lt;a href=&#34;https://scotty.dance/cache_sim/cachesim2.zip&#34;&gt;zip file&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;java -jar CacheSim.jar 17 4 3 lru on memory-small.txt&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;arg 1: cache size [log base 2]&lt;/li&gt;
+&lt;li&gt;arg 2: block size [log base 2]&lt;/li&gt;
+&lt;li&gt;arg 3: set &lt;a href=&#34;http://csillustrated.berkeley.edu/PDFs/handouts/cache-3-associativity-handout.pdf&#34;&gt;associativity&lt;/a&gt; [log base 2]&lt;/li&gt;
+&lt;li&gt;arg 4: cache miss behavior [fifo, lru]&lt;/li&gt;
+&lt;li&gt;arg 5: verbose output [on, off]&lt;/li&gt;
+&lt;li&gt;arg 6: input file containing memory addresses&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;nbsp;
+&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;other stuff found in the zip file&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a nasty perl script that can be used for address generation&lt;/li&gt;
+&lt;li&gt;a random index and offset generator&lt;/li&gt;
+&lt;li&gt;i used them like this to create an address_gen.txt input file:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ create | generator&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/scottstav/cache-sim&#34;&gt;source code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hsh</title>
+      <link>https://scotty.dance/post/hsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://scotty.dance/post/hsh/</guid>
+      <description>
+
+&lt;h1 id=&#34;hsh&#34;&gt;&lt;strong&gt;hsh&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;final assignement for systems programming.&lt;/li&gt;
+&lt;li&gt;capable of basic piping, backgrounding, and io operations.&lt;/li&gt;
+&lt;li&gt;download the &lt;a href=&#34;https://scotty.dance/hsh/hsh-1.0.tar.gz&#34;&gt;tarball&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;tar -zxvf hsh-1.0.tar.gz
+./configure
+make
+hsh
+&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/scottstav/hsh&#34;&gt;source code&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

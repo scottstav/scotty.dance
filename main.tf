@@ -1,0 +1,27 @@
+module "mailer" {
+  source                = "github.com/samstav/tf_mailgun_aws"
+  domain                = "${var.domain}"
+  mailgun_smtp_password = "${var.mailgun_smtp_password}"
+}
+
+resource "aws_route53_record" "root" {
+  zone_id = "${module.mailer.zone_id}"
+  name = "${var.domain}"
+  type = "A"
+  alias {
+    name = "s3-website-us-east-1.amazonaws.com."
+    zone_id = "Z3AQBSTGFYJSTF"
+    evaluate_target_health = false
+  }
+}
+
+resource "aws_route53_record" "www" {
+  zone_id = "${module.mailer.zone_id}"
+  name = "www.${var.domain}"
+  type = "A"
+  alias {
+    name = "s3-website-us-east-1.amazonaws.com."
+    zone_id = "Z3AQBSTGFYJSTF"
+    evaluate_target_health = false
+  }
+}
