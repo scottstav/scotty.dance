@@ -6,7 +6,8 @@ date = "2017-01-04"
 +++
 
 # kendama is a Japanese skill toy. 
-# I have been playing for a couple of years and I document my progress here.
+everything is hard before it is easy
+___
 
 {{< youtube C1jliEZPuJk >}}
 ## Ashville Living Room + Santa Elena Canyon
