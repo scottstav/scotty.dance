@@ -8,8 +8,6 @@ date = "2017-01-02"
 
 ## Nori is a blue heeler
 
-## I take a lot of pictures of her and need somewhere to put them
-
 
 {{< figure src="/noripics/C4633651-3E80-4672-89FF-6FF89BE3F296.JPG"  >}}
 {{< figure src="/noripics/IMAG0033.jpg"  >}}
@@ -24,6 +22,7 @@ date = "2017-01-02"
 {{< figure src="/noripics/IMAG0342.jpg"  >}}
 {{< figure src="/noripics/IMAG0434.jpg"  >}}
 {{< figure src="/noripics/IMAG0453-MOTION.gif"  >}}
+nori eating nori
 {{< figure src="/noripics/IMAG0500.jpg"  >}}
 {{< figure src="/noripics/IMAG0521.jpg"  >}}
 {{< figure src="/noripics/IMAG0557.jpg"  >}}
