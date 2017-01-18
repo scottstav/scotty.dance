@@ -22,11 +22,6 @@
   </url>
   
   <url>
-    <loc>https://scotty.dance/about/</loc>
-    <lastmod>2016-12-27T11:11:27-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://scotty.dance/post/cache_sim/</loc>
   </url>
   
@@ -34,6 +29,10 @@
     <loc>https://scotty.dance/post/</loc>
     <lastmod>2017-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://scotty.dance/about/</loc>
   </url>
   
   <url>

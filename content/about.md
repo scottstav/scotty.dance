@@ -5,11 +5,13 @@ draft = false
 
 +++
 
- # brief introduction
 
- * i study Computer Science at The University of Texas at San Antonio
- * i eat tex mex professionally 
+ # brief introduction
+ <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+
+ * I study Computer Science at The University of Texas at San Antonio 
  * AppleCare at-home advisor 
- * here are a **whole** bunch of pics of my [dog]({{< relref "Norichan.md" >}})
+ * here are a **whole** bunch of pictures of my [dog]({{< relref "Norichan.md" >}}) <i class="em em-rice_ball"></i>
  * I play [kendama]({{< relref "kendama.md" >}})
  
