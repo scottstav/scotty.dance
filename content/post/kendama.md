@@ -9,6 +9,9 @@ date = "2017-01-04"
 everything is hard before it is easy
 ___
 
+{{< youtube j3_grWdHJDY >}}
+## late night around bird
+
 {{< youtube C1jliEZPuJk >}}
 ## Ashville Living Room + Santa Elena Canyon
 
