@@ -6,11 +6,9 @@ scotty-dance.csr
 intermediate.crt
 scotty_dance_decrypt.key
 scotty_dance_ee.crt
-static/cache_sim
-public/cache_sim
+public/
+static/cache_sim        # 
 static/hsh
-public/hsh
 static/code_blocks
-public/code_blocks
 themes/hugo-cactus-theme/exampleSite/
 .terraform

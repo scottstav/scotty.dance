@@ -1,5 +1,5 @@
 +++
-description = "Modern Abstract Algebra (MAT 4233) final project"
+description = ""
 title = "Algebraic Coding Thoery"
 draft = "false"
 date = "2017-01-03"
