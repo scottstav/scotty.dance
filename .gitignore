@@ -1,4 +1,6 @@
 *.plan
+history.lock
+config.yml
 terraform.tfvars
 .DS_Store
 scotty_dance.key
