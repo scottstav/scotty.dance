@@ -11,7 +11,7 @@ draft = false
 
 
  * I study Computer Science at The University of Texas at San Antonio 
- * AppleCare at-home advisor 
+ * Amazon SDE Inter 
  * here are a **whole** bunch of pictures of my [dog]({{< relref "Norichan.md" >}}) <i class="em em-rice_ball"></i>
  * I play [kendama]({{< relref "kendama.md" >}})
  
