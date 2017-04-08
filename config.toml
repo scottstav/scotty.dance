@@ -1,5 +1,5 @@
 # Site settings
-baseurl = ""
+baseurl = "scotty.dance/"
 themesDir = "themes"
 languageCode = "en-us"
 title = "scott stavinoha"
