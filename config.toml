@@ -3,7 +3,7 @@ baseurl = "/"
 themesDir = "themes"
 languageCode = "en-us"
 title = "scott stavinoha"
-theme = "hugo-cactus-theme"
+theme = "herring-cove-master"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
