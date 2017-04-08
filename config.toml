@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "/"
+baseurl = ""
 themesDir = "themes"
 languageCode = "en-us"
 title = "scott stavinoha"
