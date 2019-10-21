@@ -1,0 +1,25 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Courier";
+}
+
+.navbar > * {
+  list-style-type: none;
+  text-align: center;
+  font-weight: bolder;
+}
+
+body.black {
+  background-color: #00001a;
+}
+
+.black .navbar {
+  color: #2b3595;
+  text-align: center;
+}
+
+.black .intro {
+  color: #7045af;
+  text-align: center;
+}
