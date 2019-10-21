@@ -6,22 +6,34 @@ import About from "./About.jsx";
 import '../styles/modes.css';
 
 class Home extends Component {
+
   constructor() {
     super();
+    this.themes = ['black', 'white'];
     this.state = {
-      mode: 'black'
+      mode: 0
     };
+    this.toggleTheme = this.toggleTheme.bind(this);
+  }
+
+  toggleTheme() {
+    this.setState({mode: (this.state.mode + 1) % 2})
   }
   
   render() {
-    document.body.className = this.state.mode;
+    let className = this.themes[this.state.mode];
+    document.body.className = className;
     return (
-      <Router>
-	<div className={this.state.mode}>
+      <div>
+	<Router>
 	  <Navbar/>
 	  <Route exact path="/" component={About} />
+	</Router>
+	<br></br>
+	<div id='toggle-theme'>
+	  <a href='#' onClick={this.toggleTheme}> 🔄 </a>
 	</div>
-      </Router>
+      </div>
     );
   }
 }
