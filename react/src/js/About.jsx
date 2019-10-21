@@ -6,7 +6,7 @@ class About extends Component {
     return (
       <div className="intro">
 	Hi, I'm Scott ☀️  <br></br><br></br><br></br>
-	<a href="mailto:howdy@scotty.dance"> email </a><br></br>
+	<a href="mailto:howdy@scotty.dance"> howdy@scotty.dance </a><br></br>
 	<a href="https://github.com/scottstav"> github </a><br></br>
 	<a href="https://twitter.com/scottscavinsova"> twitter </a> <br></br>
       </div>
