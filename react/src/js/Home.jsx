@@ -11,7 +11,7 @@ class Home extends Component {
     super();
     this.themes = ['black', 'white'];
     this.state = {
-      mode: 0
+      mode: 1
     };
     this.toggleTheme = this.toggleTheme.bind(this);
   }
