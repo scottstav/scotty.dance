@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import {HashRouter as Router, Route} from 'react-router-dom';
 import Navbar from "./Navbar.jsx";
 import About from "./About.jsx";
+import Socials from "./Socials.jsx";
 import '../styles/modes.css';
 
 class Home extends Component {
@@ -29,6 +30,7 @@ class Home extends Component {
 	  <Navbar/>
 	  <Route exact path="/" component={About} />
 	</Router>
+	<Socials/>
 	<br></br>
 	<div id='toggle-theme'>
 	  <a href='#' onClick={this.toggleTheme}> 🔄 </a>
