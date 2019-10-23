@@ -15,6 +15,11 @@ body {
   font-size: large;
 }
 
+.intro, .socials {
+  text-align: center;
+  padding: 1em 1em 1em 1em;
+}
+
 body.black {
   background-color: #00001a;
 }
@@ -24,9 +29,8 @@ body.black {
   text-align: center;
 }
 
-.black .intro {
+.black .intro, .socials {
   color: #7045af;
-  text-align: center;
 }
 
 body.white {
@@ -38,7 +42,6 @@ body.white {
   text-align: center;
 }
 
-.white .intro {
+.white .intro, .socials {
   color: #e6adbc;
-  text-align: center;
 }
