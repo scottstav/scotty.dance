@@ -14,11 +14,11 @@ class Socials extends Component {
       iMessageLink = <div></div>
     }
     return (
-      <div className="socials">
-	<a href="mailto:howdy@scotty.dance"> howdy@scotty.dance </a><br></br>
-	<a href="https://github.com/scottstav"> github </a><br></br>
-	<a href="https://twitter.com/scottscavinsova"> twitter </a> <br></br>
-	{iMessageLink}
+      <div>
+	<span><a href="mailto:howdy@scotty.dance"> howdy@scotty.dance</a></span>|
+	<span><a href="https://github.com/scottstav"> github</a></span>|
+	<span><a href="https://twitter.com/scottscavinsova"> twitter</a></span>|
+	<span>{iMessageLink}</span>
       </div>
     );
   }

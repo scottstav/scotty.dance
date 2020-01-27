@@ -28,6 +28,10 @@ module.exports = {
             loader: "html-loader"
           }
         ]
+      },
+      {
+        test: /\.md$/,
+        use: 'raw-loader'
       }
     ]
   },
@@ -35,7 +39,8 @@ module.exports = {
   plugins: [
     new webpack.EnvironmentPlugin({
       // development is default
-      NODE_ENV: 'development'
-    }),
+      NODE_ENV: 'development',
+      API_URL: 'http://localhost:3000/'
+    })
   ],
 };
