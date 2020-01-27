@@ -1,9 +1,12 @@
 import React, { Component, Header } from "react";
 import ReactDOM from "react-dom";
-import {HashRouter as Router, Route} from 'react-router-dom';
+import {HashRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
+import FlexView from 'flexview';
 import Navbar from "./Navbar.jsx";
 import About from "./About.jsx";
-import Socials from "./Socials.jsx";
+import Prompt from "./Prompt.jsx";
+import Thoughts from "./Thoughts.jsx";
+import SocialsContainer from "./SocialsContainer.jsx";
 import '../styles/modes.css';
 
 class Home extends Component {
@@ -12,7 +15,7 @@ class Home extends Component {
     super();
     this.themes = ['black', 'white'];
     this.state = {
-      mode: 1
+      mode: 0
     };
     this.toggleTheme = this.toggleTheme.bind(this);
   }
@@ -25,17 +28,30 @@ class Home extends Component {
     let className = this.themes[this.state.mode];
     document.body.className = className;
     return (
-      <div>
+      <FlexView column >
 	<Router>
-	  <Navbar/>
-	  <Route exact path="/" component={About} />
+	  <FlexView height={50} >
+	    <Navbar/>
+	    <SocialsContainer/>
+	  </FlexView>
+	  <FlexView className={"main-content"} height={200}>
+	    <Switch>
+	      <Route exact path="/about" component={About} />
+	      <Route path="/thoughts" component={Thoughts} />
+	      <Route exact path="/prompt" component={Prompt} />
+	      <Route exact path="/">
+		<Redirect to="/about" />
+              </Route>
+	    </Switch>
+	  </FlexView>
 	</Router>
-	<Socials/>
-	<br></br>
-	<div id='toggle-theme'>
-	  <a href='#' onClick={this.toggleTheme}> 🔄 </a>
-	</div>
-      </div>
+
+	{/* this is broken :/ */}
+	{/* <div id='toggle-theme'>
+	    <a href='#' onClick={this.toggleTheme}> 🔄 </a>
+	    </div> */}
+      </FlexView>
+
     );
   }
 }
