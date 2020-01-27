@@ -1,0 +1,45 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Untitled
+Globals:
+  Function:
+    Timeout: 3
+
+Resources:
+  GetPrompt:
+    Type: AWS::Serverless::Function 
+    Properties:
+      CodeUri: src/
+      Handler: app.get_prompt
+      Runtime: ruby2.5
+      Events:
+        GetStatus:
+          Type: Api
+          Properties:
+            Path: /getPrompt
+            Method: get
+  PutAnswer:
+    Type: AWS::Serverless::Function 
+    Properties:
+      CodeUri: src/
+      Handler: app.put_answer
+      Runtime: ruby2.5
+      Events:
+        GetStatus:
+          Type: Api
+          Properties:
+            Path: /putAnswer
+            Method: get
+  GetAnswers:
+    Type: AWS::Serverless::Function 
+    Properties:
+      CodeUri: src/
+      Handler: app.get_answers
+      Runtime: ruby2.5
+      Events:
+        GetStatus:
+          Type: Api
+          Properties:
+            Path: /getAnswers
+            Method: get
