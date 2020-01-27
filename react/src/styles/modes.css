@@ -1,47 +1,70 @@
 body {
   height: 100%;
-  margin: 0;
   font-family: "Courier";
+  background-color: #a388c4;
 }
 
-.navbar > * {
-  list-style-type: none;
-  text-align: center;
+.post {
+  text-align: left;
+}
+
+.post-list {
+  padding-bottom: 1em;
+  text-align: left;  
+}
+
+.post-list-item {
+  padding: .5em .5em .5em .5em;
   font-weight: bolder;
 }
 
-#toggle-theme {
+.nav-bar {
+  background-color: #2f0476;
+  padding: .2em .2em .2em .2em;
   text-align: center;
-  font-size: large;
 }
 
-.intro, .socials {
+.nav-item {
+  padding-left: 1em;
+  padding-right: 1em;  
+  font-weight: bolder;
+}
+
+.intro {
   text-align: center;
   padding: 1em 1em 1em 1em;
 }
 
-body.black {
-  background-color: #00001a;
+.main-content {
+  color: #2f0476;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
-.black .navbar {
+a {
+  color: #f6f293;
+}
+
+.active {
+  color: #dfd616;
+}
+
+.rounded {
+  border-radius: 100%;
+}
+
+.socials {
+  text-align: center;
+  padding: .1em .1em .1em .1em;
+  background-color: #7045af;
   color: #2b3595;
-  text-align: center;
 }
 
-.black .intro, .socials {
-  color: #7045af;
-}
-
-body.white {
-  background-color: #f7f4e9;
-}
-
-.white .navbar {
-  color: #aa69c6;
-  text-align: center;
-}
-
-.white .intro, .socials {
-  color: #e6adbc;
+.socials span {
+  display: inline-block;
+  padding-left: .5em;
+  padding-right: .5em;
 }
