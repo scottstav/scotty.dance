@@ -19,7 +19,11 @@ module.exports = merge(baseConfig, {
       s3UploadOptions: {
         Bucket: 'scotty.dance'
       }
-    })
-
+    }),
+    new webpack.EnvironmentPlugin({
+      // development is default
+      NODE_ENV: 'development',
+      API_URL: 'https://wjc7b9wjoi.execute-api.us-east-1.amazonaws.com/Prod/'
+    })    
   ]
 });
