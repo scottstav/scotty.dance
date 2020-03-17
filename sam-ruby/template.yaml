@@ -1,45 +1,84 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  Untitled
+  It is what it is
 Globals:
   Function:
-    Timeout: 3
+    Timeout: 30
 
 Resources:
-  GetPrompt:
-    Type: AWS::Serverless::Function 
+  ScottyDotDanceApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: Prod
+
+  GetPosts:
+    Type: AWS::Serverless::Function
     Properties:
       CodeUri: src/
-      Handler: app.get_prompt
+      Handler: app.Blog.get_posts
       Runtime: ruby2.5
+      Policies:
+        - DynamoDBReadPolicy:
+            TableName: !Ref PostsTable
+        - S3CrudPolicy:
+            BucketName: !Ref PostsBucket
       Events:
-        GetStatus:
+        ApiGateway:
           Type: Api
           Properties:
-            Path: /getPrompt
+            RestApiId: !Ref ScottyDotDanceApi
+            Path: /get_posts
             Method: get
-  PutAnswer:
-    Type: AWS::Serverless::Function 
+
+  CreatePost:
+    Type: AWS::Serverless::Function
     Properties:
       CodeUri: src/
-      Handler: app.put_answer
+      Handler: app.Blog.create_post
       Runtime: ruby2.5
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref PostsTable
+        - S3CrudPolicy:
+            BucketName: !Ref PostsBucket
       Events:
-        GetStatus:
+        ApiGateway:
           Type: Api
           Properties:
-            Path: /putAnswer
-            Method: get
-  GetAnswers:
-    Type: AWS::Serverless::Function 
+            RestApiId: !Ref ScottyDotDanceApi
+            Path: /create_post
+            Method: put
+
+  PostsTable:
+    Type: AWS::DynamoDB::Table
     Properties:
-      CodeUri: src/
-      Handler: app.get_answers
-      Runtime: ruby2.5
-      Events:
-        GetStatus:
-          Type: Api
-          Properties:
-            Path: /getAnswers
-            Method: get
+      TableName: posts
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+        - AttributeName: post_type
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+      GlobalSecondaryIndexes:
+        - IndexName: post_type-index
+          KeySchema:
+            - AttributeName: post_type
+              KeyType: HASH
+          Projection:
+            ProjectionType: ALL
+
+  PostsBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: posts-scotty-dot-dance
+      VersioningConfiguration:
+        Status: Enabled
+
+Outputs:
+  ProdAPIGatewayEndpoint:
+    Description: "API Prod stage endpoint"
+    Value: !Sub "https://${ScottyDotDanceApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"

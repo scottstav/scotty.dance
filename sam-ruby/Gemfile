@@ -1,8 +1,7 @@
 source "https://rubygems.org"
 
-gem "httparty"
+gem 'aws-sdk', '~> 3'
+gem 'pry'
+gem 'pry-doc', '~> 0.6.0'
 
-group :test do
-  gem "test-unit"
-  gem "mocha"
-end
+gem "byebug", "~> 11.1", :groups => [:development, :test]
