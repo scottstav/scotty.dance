@@ -7,48 +7,88 @@ Globals:
     Timeout: 30
 
 Resources:
-  ScottyDotDanceApi:
+  PostApi:
     Type: AWS::Serverless::Api
     Properties:
-      StageName: Prod
+      StageName: prod
+      Domain:
+        DomainName: api.scotty.dance
+        CertificateArn: arn:aws:acm:us-east-1:305167691271:certificate/aa0dad8d-1fb9-45fb-84b4-67501e79ba2a
 
-  GetPosts:
+  GetPost:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: src/
-      Handler: app.Blog.get_posts
+      Handler: app.PostController.get
       Runtime: ruby2.5
       Policies:
-        - DynamoDBReadPolicy:
-            TableName: !Ref PostsTable
-        - S3CrudPolicy:
-            BucketName: !Ref PostsBucket
+        - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
       Events:
         ApiGateway:
           Type: Api
           Properties:
-            RestApiId: !Ref ScottyDotDanceApi
-            Path: /get_posts
+            RestApiId: !Ref PostApi
+            Path: /posts/{id}
+            Method: get
+            RequestParameters:
+              method.request.path.id:
+                Required: false
+                Caching: false
+  GetPosts:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/
+      Handler: app.PostController.get
+      Runtime: ruby2.5
+      Policies:
+        - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
+      Events:
+        ApiGateway:
+          Type: Api
+          Properties:
+            RestApiId: !Ref PostApi
+            Path: /posts
             Method: get
 
   CreatePost:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: src/
-      Handler: app.Blog.create_post
+      Handler: app.PostController.create
       Runtime: ruby2.5
       Policies:
-        - DynamoDBCrudPolicy:
-            TableName: !Ref PostsTable
-        - S3CrudPolicy:
-            BucketName: !Ref PostsBucket
+        - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
       Events:
         ApiGateway:
           Type: Api
           Properties:
-            RestApiId: !Ref ScottyDotDanceApi
-            Path: /create_post
-            Method: put
+            RestApiId: !Ref PostApi
+            Path: /posts/create
+            Method: post
+
+  EditPost:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/
+      Handler: app.PostController.edit
+      Runtime: ruby2.5
+      Policies:
+        - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
+      Events:
+        ApiGateway:
+          Type: Api
+          Properties:
+            RestApiId: !Ref PostApi
+            Path: /posts/edit/{id}
+            Method: get
+            RequestParameters:
+              method.request.path.id:
+                Required: true
+                Caching: false
 
   PostsTable:
     Type: AWS::DynamoDB::Table
@@ -77,8 +117,3 @@ Resources:
       BucketName: posts-scotty-dot-dance
       VersioningConfiguration:
         Status: Enabled
-
-Outputs:
-  ProdAPIGatewayEndpoint:
-    Description: "API Prod stage endpoint"
-    Value: !Sub "https://${ScottyDotDanceApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"

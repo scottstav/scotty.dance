@@ -1,25 +1,35 @@
-require 'aws-sdk'
-require 'byebug'
+require 'aws-sdk-s3'
 
-class S3Helper
+module S3Helper
 
-  def initialize
-    @s3 = Aws::S3::Resource.new({region: 'us-east-1'})
-    @posts_bucket_name = 'posts-scotty-dot-dance'
+  POSTS_BUCKET_NAME = 'posts-scotty-dot-dance'
+
+  def s3
+    @s3 ||= Aws::S3::Resource.new
+    @s3
   end
 
-  def signed_put_url(key:) 
-    bucket = @s3.bucket(@posts_bucket_name)
-    object = bucket.object(key)
+  def touch_object
+    bucket = s3.bucket(POSTS_BUCKET_NAME)
+    bucket.put_object(key: self.object_key)
+  end
+
+  def signed_put_url
+    bucket = s3.bucket(POSTS_BUCKET_NAME)
+    object = bucket.object(self.object_key)
     object.presigned_url(:put)
   end
 
-  def get_object_content(name:)
+  def get_object_content
     content = "Nothing here."
-    bucket = @s3.bucket(@posts_bucket_name)
-    resp = bucket.object(name).get.body.read
+    bucket = s3.bucket(POSTS_BUCKET_NAME)
+    resp = bucket.object(self.object_key).get.body.read
     content = resp unless resp.nil? || resp.empty?
     content
   end
-  
+
+  def patherize(str)
+    str.downcase.gsub(/\s+/, '_').gsub(/[^a-z_0-9]/, '')
+  end
+
 end
