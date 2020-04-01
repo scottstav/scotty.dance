@@ -21,7 +21,7 @@ module S3Helper
   end
 
   def get_object_content
-    content = "Nothing here."
+    content = ""
     bucket = s3.bucket(POSTS_BUCKET_NAME)
     resp = bucket.object(self.object_key).get.body.read
     content = resp unless resp.nil? || resp.empty?
