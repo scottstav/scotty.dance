@@ -6,7 +6,7 @@ const baseConfig = require('./base.config.js');
 
 module.exports = merge(baseConfig, {
   mode: 'production',
-  
+
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'
@@ -21,9 +21,8 @@ module.exports = merge(baseConfig, {
       }
     }),
     new webpack.EnvironmentPlugin({
-      // development is default
-      NODE_ENV: 'development',
-      API_URL: 'https://wjc7b9wjoi.execute-api.us-east-1.amazonaws.com/Prod/'
-    })    
+      NODE_ENV: 'prod',
+      API_URL: 'https://api.scotty.dance'
+    })
   ]
 });

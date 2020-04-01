@@ -7,7 +7,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  
+
   module: {
     rules: [
       {
@@ -40,7 +40,7 @@ module.exports = {
     new webpack.EnvironmentPlugin({
       // development is default
       NODE_ENV: 'development',
-      API_URL: 'http://localhost:3000/'
+      API_URL: 'https://api.scotty.dance'
     })
   ],
 };

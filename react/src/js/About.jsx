@@ -1,17 +1,41 @@
 import React, { Component, Header } from "react";
 import ReactDOM from "react-dom";
+import {Tooltip, OverlayTrigger} from 'react-bootstrap';
 import SocialsContainer from "./SocialsContainer.jsx";
+import Post from "./Post.jsx";
 
 class About extends Component {
+
   render() {
     return (
-      <div>
-	hello this is scott. my job is to develop software. i base too much of my identity in the music i listen to. i wish i spent more time outside. sometimes, programming makes me happy. my biggest fear is that my life will never be fully integrated with my desire to create. i feel best when i am serving people. i am looking for something important to do.
-	<br/>
-	<br/>	
-	🌞
-
+      <div className="about">
+	<p>
+	  Hi! I'm Scott <OverlayTrigger
+	    placement="top"
+	    delay={{ show: 250, hide: 400 }}
+	    overlay={<Tooltip>"sta-vi-no-uh"</Tooltip>}
+	  >
+	  <a href="#">Stavinoha</a>
+	  </OverlayTrigger>.
+	</p>
+	<ul style={{listStyle: "none", display: "inline-block", textAlign: "left"}}>
+	  <li>
+	    💻
+	    Programmer
+	  </li>
+	  <li>
+	    📍
+	    Texas, mostly
+	  </li>
+	  <li>
+	    ✉️
+	    <i> <a href="mailto:howdy@scotty.dance">howdy@scotty.dance</a></i>
+	  </li>
+	</ul>
+	<p></p>
+	{this.props.latestPost}
       </div>
+
 
     );
   }

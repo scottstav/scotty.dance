@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import NavItem from "./NavItem.jsx";
+import PostList from "./PostList.jsx";
 import '../styles/modes.css';
 
 class Navbar extends Component {
@@ -9,8 +10,8 @@ class Navbar extends Component {
     return (
       <div className={"nav-bar"}>
 	<NavItem path="/about" text="about"/>
-	<NavItem path="/prompt" text="question"/>
-	<NavItem path="/thoughts/" text="thoughts"/>	
+	|
+	<PostList path="/p/" text="posts" posts={this.props.posts} isLoaded={this.props.isLoaded}/>
       </div>
     );
   }

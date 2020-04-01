@@ -7,18 +7,20 @@ class Socials extends Component {
     let isIOS = navigator.platform.match(/(iPhone|iPod|iPad)/i)?true:false;
     let iMessageLink;
     if (isMac) {
-      iMessageLink = <a href="imessage:scottstavinoha@gmail.com"> iMessage 💻</a>
+      iMessageLink = <a href="imessage:scottstavinoha@gmail.com"><i className="fa fa-comment"></i></a>
     } else if (isIOS) {
-      iMessageLink = <a href="sms:scottstavinoha@gmail.com"> iMessage 📱</a>
+      iMessageLink = <a href="sms:scottstavinoha@gmail.com"><i className="fa fa-comment"></i></a>
     } else {
       iMessageLink = <div></div>
     }
     return (
-      <div>
-	<span><a href="mailto:howdy@scotty.dance"> howdy@scotty.dance</a></span>|
-	<span><a href="https://github.com/scottstav"> github</a></span>|
-	<span><a href="https://twitter.com/scottscavinsova"> twitter</a></span>|
-	<span>{iMessageLink}</span>
+      <div className="socials">
+	<div><a href="mailto:howdy@scotty.dance"><i className="fas fa-envelope"></i></a></div>
+	<div><a href="https://github.com/scottstav"><i className="fab fa-github"></i></a></div>
+	<div><a href="https://twitter.com/scottscavinsova"><i className="fab fa-twitter"></i></a></div>
+	<div><a href="https://keybase.io/scottstav"><i className="fab fa-keybase"></i></a></div>
+	<div><a href="https://www.linkedin.com/in/scottstav/"><i className="fab fa-linkedin"></i></a></div>
+	<div>{iMessageLink}</div>
       </div>
     );
   }
