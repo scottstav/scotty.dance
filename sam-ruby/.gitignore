@@ -1,4 +1,5 @@
-/vendor/
-/.bundle/
+vendor/
+.bundle/
 .byebug_history
-/.aws-sam/
+.aws-sam/
+scratch.rb
