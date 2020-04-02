@@ -13,7 +13,7 @@ class About extends Component {
 	  Hi! I'm Scott <OverlayTrigger
 			  placement="top"
 			  delay={{ show: 100, hide: 300 }}
-			  trigger={['click', 'hover']}
+			  trigger={['focus', 'hover']}
 			  overlay={<Tooltip>"sta-vi-no-uh"</Tooltip>}
 			>
 	  <u>Stavinoha</u>
