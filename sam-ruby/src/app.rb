@@ -36,6 +36,19 @@ module PostController
     )
   end
 
+  def self.delete(event:, context:)
+    id = event.dig('pathParameters', 'id')
+    if id
+      Post.where(id: id).delete_all
+      return lambda_response(statusCode: 200, body: { message: "Successfully deleted post with id #{id}." })
+    end
+
+    lambda_response(
+      statusCode: 403,
+      body: { message: "No id provided to delete." }
+    )
+  end
+
   def self.get(event:, context:)
     id = event.dig('pathParameters', 'id')
     if id

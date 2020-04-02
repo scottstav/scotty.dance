@@ -3,3 +3,5 @@ vendor/
 .byebug_history
 .aws-sam/
 scratch.rb
+event.json
+scratch.rb

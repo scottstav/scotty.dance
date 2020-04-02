@@ -90,6 +90,27 @@ Resources:
                 Required: true
                 Caching: false
 
+  DeletePost:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/
+      Handler: app.PostController.delete
+      Runtime: ruby2.5
+      Policies:
+        - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
+      Events:
+        ApiGateway:
+          Type: Api
+          Properties:
+            RestApiId: !Ref PostApi
+            Path: /posts/delete/{id}
+            Method: delete
+            RequestParameters:
+              method.request.path.id:
+                Required: true
+                Caching: false
+
   PostsTable:
     Type: AWS::DynamoDB::Table
     Properties:
@@ -117,3 +138,9 @@ Resources:
       BucketName: posts-scotty-dot-dance
       VersioningConfiguration:
         Status: Enabled
+
+  MediaBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: media-scotty-dot-dance
+      AccessControl: PublicRead
