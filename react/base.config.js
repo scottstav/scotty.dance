@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const CopyPlugin = require('copy-webpack-plugin');
 var path = require('path');
 
 module.exports = {
@@ -37,6 +38,11 @@ module.exports = {
   },
 
   plugins: [
+    new CopyPlugin([
+      { from: 'favicon', to: 'favicon' },
+      { from: 'dotfiles.sh', to: 'dotfiles.sh' },
+      { from: 'keybase.txt', to: 'keybase.txt' }
+    ]),
     new webpack.EnvironmentPlugin({
       // development is default
       NODE_ENV: 'development',
