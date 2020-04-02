@@ -13,7 +13,7 @@ class Thoughts extends Component {
   render() {
     if (!this.props.isLoaded) {
       return (
-	<Spinner animation="grow" role="status">
+	<Spinner animation="border" role="status">
 	  <span className="sr-only">Loading...</span>
 	</Spinner>
       )

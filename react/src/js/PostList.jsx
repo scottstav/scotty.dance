@@ -12,7 +12,7 @@ class PostList extends Component {
   render() {
     if (!this.props.isLoaded) {
       return (
-	<Spinner animation="grow" size="small" role="status">
+	<Spinner animation="border" size="small" role="status">
 	  <span className="sr-only">Loading...</span>
 	</Spinner>
       )
