@@ -11,32 +11,31 @@ class About extends Component {
       <div className="about">
 	<p>
 	  Hi! I'm Scott <OverlayTrigger
-	    placement="top"
-	    delay={{ show: 250, hide: 400 }}
-	    overlay={<Tooltip>"sta-vi-no-uh"</Tooltip>}
-	  >
-	  <a href="#">Stavinoha</a>
-	  </OverlayTrigger>.
+			  placement="top"
+			  delay={{ show: 100, hide: 300 }}
+			  trigger={['click', 'hover']}
+			  overlay={<Tooltip>"sta-vi-no-uh"</Tooltip>}
+			>
+	  <u>Stavinoha</u>
+	  </OverlayTrigger>
 	</p>
-	<ul style={{listStyle: "none", display: "inline-block", textAlign: "left"}}>
-	  <li>
-	    💻
-	    Programmer
-	  </li>
-	  <li>
-	    📍
-	    Texas, mostly
-	  </li>
-	  <li>
-	    ✉️
-	    <i> <a href="mailto:howdy@scotty.dance">howdy@scotty.dance</a></i>
-	  </li>
-	</ul>
+	<div style={{ display: "inline-block", textAlign: "left"}}>
+
+	  💻
+	  Programmer
+	  <br/>
+
+	  📍
+	  Texas, mostly
+	  <br/>
+
+	  ✉️
+	  <i> <a href="mailto:howdy@scotty.dance">howdy@scotty.dance</a></i>
+	  <br/>
+	</div>
 	<p></p>
 	{this.props.latestPost}
       </div>
-
-
     );
   }
 }

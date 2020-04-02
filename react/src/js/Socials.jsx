@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 class Socials extends Component {
+
   render() {
     let isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
     let isIOS = navigator.platform.match(/(iPhone|iPod|iPad)/i)?true:false;
@@ -14,7 +15,7 @@ class Socials extends Component {
       iMessageLink = <div></div>
     }
     return (
-      <div className="socials">
+      <div id="socials">
 	<div><a href="mailto:howdy@scotty.dance"><i className="fas fa-envelope"></i></a></div>
 	<div><a href="https://github.com/scottstav"><i className="fab fa-github"></i></a></div>
 	<div><a href="https://twitter.com/scottscavinsova"><i className="fab fa-twitter"></i></a></div>

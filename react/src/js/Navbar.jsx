@@ -11,7 +11,7 @@ class Navbar extends Component {
       <div className={"nav-bar"}>
 	<NavItem path="/about" text="about"/>
 	|
-	<PostList path="/p/" text="posts" posts={this.props.posts} isLoaded={this.props.isLoaded}/>
+	<NavItem path="/p/" text="posts"/>
       </div>
     );
   }

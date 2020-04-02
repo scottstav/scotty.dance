@@ -3,6 +3,7 @@ var S3Uploader = require('webpack-s3-plugin');
 var AWS = require('aws-sdk');
 const merge = require('webpack-merge');
 const baseConfig = require('./base.config.js');
+const webpack = require('webpack');
 
 module.exports = merge(baseConfig, {
   mode: 'production',
