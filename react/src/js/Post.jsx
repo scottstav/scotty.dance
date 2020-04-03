@@ -1,18 +1,28 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import '../styles/modes.css';
-import ReactMarkdown from "react-markdown/with-html";
+import ReactMarkdown from "react-markdown";
 
 class Post extends Component {
 
   render() {
-    console.log("helllo" + this.props);
     let postId = this.props.postId ? this.props.postId : this.props.match.params.postId;
     let post = this.props.posts.filter(function(p) { return p.object_key == postId; })[0];
+    const renderers = {
+      code: (props) => {
+	console.log(props);
+	return(
+	  <pre className="prettyprint">
+            {props.value}
+	  </pre>
+	);
+      }
+    }
 
     return (
+
       <div className={"post"}>
-	<ReactMarkdown source={post.markdown} escapeHtml={false}/>
+	<ReactMarkdown source={post.markdown} renderers={renderers}/>
       </div>
     );
   }
