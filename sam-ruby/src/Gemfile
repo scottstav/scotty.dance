@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem 'aws-sdk', '~> 3'
 gem 'dynamoid', '~> 3'
+gem 'net-ssh'
 gem 'pry'
 gem 'pry-doc', '~> 0.6.0'
 

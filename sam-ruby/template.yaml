@@ -15,6 +15,39 @@ Resources:
         DomainName: api.scotty.dance
         CertificateArn: arn:aws:acm:us-east-1:305167691271:certificate/aa0dad8d-1fb9-45fb-84b4-67501e79ba2a
 
+  StartServer:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/
+      Handler: app.MinecraftServerController.start
+      Runtime: ruby2.5
+      Policies:
+        - arn:aws:iam::aws:policy/AmazonEC2FullAccess
+      Events:
+        ApiGateway:
+          Type: Api
+          Properties:
+            RestApiId: !Ref PostApi
+            Path: /minecraft/start
+            Method: post
+
+  GetServerState:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/
+      Handler: app.MinecraftServerController.state
+      Runtime: ruby2.5
+      Policies:
+        - arn:aws:iam::aws:policy/AmazonEC2FullAccess
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
+      Events:
+        ApiGateway:
+          Type: Api
+          Properties:
+            RestApiId: !Ref PostApi
+            Path: /minecraft/state
+            Method: get
+
   GetPost:
     Type: AWS::Serverless::Function
     Properties:

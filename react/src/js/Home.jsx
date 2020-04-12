@@ -6,6 +6,7 @@ import About from "./About.jsx";
 import Thoughts from "./Thoughts.jsx";
 import Post from "./Post.jsx";
 import Socials from "./Socials.jsx";
+import Minecraft from "./Minecraft.jsx";
 import '../styles/modes.css';
 
 class Home extends Component {
@@ -51,7 +52,7 @@ class Home extends Component {
 	    <Switch>
 	      <Route exact path="/about" render={(props) => <About {...props} latestPost={this.state.latestPost}/>}/>
 	      <Route path="/p" render ={(props) => <Thoughts {...props}  posts={this.state.posts} isLoaded={this.state.isLoaded}/>}/>
-
+	      <Route path="/minecraft"><Minecraft/></Route>
 	      <Route exact path="/">
 		<Redirect to="/about" />
 	      </Route>
