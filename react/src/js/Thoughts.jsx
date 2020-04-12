@@ -28,10 +28,14 @@ class Thoughts extends Component {
     }
     return (
       <div>
-	<PostList path="/p/" text="posts" posts={this.props.posts} isLoaded={this.props.isLoaded}/>
-	<Route path={`/p/:postId`} render={props => {
-	  return <Post {...props} posts={this.props.posts}/>;}}
-	/>
+	<Router>
+	  <Switch>
+	    <PostList exact path="/p/" text="posts" posts={this.props.posts} isLoaded={this.props.isLoaded}/>
+	    <Route exact path={`/p/:postId`} render={props => {
+	      return <Post {...props} posts={this.props.posts}/>;}}
+	    />
+	  </Switch>
+	</Router>
       </div>
     )
   }

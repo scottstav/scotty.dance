@@ -20,9 +20,13 @@ class Post extends Component {
     }
 
     return (
-
-      <div className={"post"}>
-	<ReactMarkdown source={post.markdown} renderers={renderers}/>
+      <div>
+	<div className="posts-back-button">
+	  <a href="#/p/">{"< back"}</a>
+	</div>
+	<div className={"post"}>
+	  <ReactMarkdown source={post.markdown} renderers={renderers}/>
+	</div>
       </div>
     );
   }

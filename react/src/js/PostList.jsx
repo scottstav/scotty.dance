@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { NavLink, Link, Route } from "react-router-dom";
 import Spinner from 'react-bootstrap/Spinner';
-import NavItem from "./NavItem.jsx";
 import Post from "./Post.jsx";
 
 import '../styles/modes.css';
@@ -20,10 +19,15 @@ class PostList extends Component {
     return (
       <div className="post-list">
 	{this.props.posts.map((value, index) => {
+	  let date = new Date(value.created_at);
+	  let dateMonth = date.toLocaleString('default', { month: 'long' });
+	  let dateYear = date.getFullYear();
 	  return (
-	    <span key={index} className={"post-list-item"}>
-	      <NavLink strict to={`${this.props.path}${value.object_key}`} >{value.title}</NavLink>
-	    </span>
+	    <a href={`#${this.props.path}${value.object_key}`} key={index} className={"post-list-item"}>
+	      <span>{value.title}</span>
+	      <div><sub>{`${dateMonth} ${dateYear}`}</sub></div>
+	      <hr/>
+	    </a>
 	  );
 	})
 	}

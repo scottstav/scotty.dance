@@ -10,6 +10,28 @@ body {
   display: inline-block;
   max-width: 100%
 }
+
+.post-list {
+  text-align: left;
+  display: inline-block;
+  white-space: nowrap;      /*keep text on one line */
+  overflow: hidden;         /*prevent text from being shown outside the border */
+  text-overflow: ellipsis;  /*cut off text with an ellipsis*/
+  padding-bottom: 1.5em;
+}
+
+.post-list-item {
+  display: block;
+  text-decoration: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.posts-back-button {
+  text-align: left;
+  margin-bottom: .5em;
+}
+
 .post img {
   max-width: 100%;
   height: auto;
@@ -29,17 +51,7 @@ body {
   border-left: 3px solid #ccc;
 }
 
-.post-list {
-  text-align: center;
-  white-space: nowrap;      /*keep text on one line */
-  overflow: hidden;         /*prevent text from being shown outside the border */
-  text-overflow: ellipsis;  /*cut off text with an ellipsis*/
-  padding-bottom: 1.5em;
-}
 
-.post-list-item {
-  display: block;
-}
 
 .nav-bar {
   padding: .2em .2em .2em .2em;
