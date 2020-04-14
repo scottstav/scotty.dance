@@ -10,12 +10,37 @@ class Post extends Component {
     let post = this.props.posts.filter(function(p) { return p.object_key == postId; })[0];
     const renderers = {
       code: (props) => {
-	console.log(props);
 	return(
 	  <pre className="prettyprint">
             {props.value}
 	  </pre>
 	);
+      },
+      link: (props) => {
+	let patt1 = /\.([0-9a-z]+)(?:[\?#]|$)/i;
+	let fileExtensions = [];
+	if (props.href && props.href.match(patt1)) {
+	  fileExtensions = props.href.match(patt1);
+	}
+	if (fileExtensions.includes("ogg") || fileExtensions.includes("m4a")) {
+	  return(
+	    <span className="audio-player">
+	      <i className="fas fa-music" aria-hidden="true"></i>
+	      <br/>
+	      {props.children[0].props.value}
+	      <audio
+		controls
+		src={props.href}>
+		Your browser does not support the
+		<code>audio</code> element.
+	      </audio>
+	    </span>
+	  );
+	} else {
+	  return (
+	    <a href={props.href}>{props.children[0].props.value}</a>
+	  );
+	}
       }
     }
 
