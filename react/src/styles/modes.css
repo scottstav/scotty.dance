@@ -54,7 +54,7 @@ body {
 .audio-player {
   margin: 0 auto;
   display: block;
-  width: 75%;
+  width: 100%;
   text-align: left;
   background-color: #FFAD96;
   border-radius: 1.5em;

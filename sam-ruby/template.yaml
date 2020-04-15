@@ -6,6 +6,25 @@ Globals:
   Function:
     Timeout: 30
 
+Parameters:
+  ScottyDomainName:
+    Type: String
+    Default: scotty.dance
+    Description: The DNS name of an existing Amazon Route 53 hosted zone
+    AllowedPattern: (?!-)[a-zA-Z0-9-.]{1,63}(?<!-)
+    ConstraintDescription: must be a valid DNS zone name.
+  FullDomainName:
+    Type: String
+    Default: www.scotty.dance
+    Description: The full domain name (e.g. www.scotty.dance)
+    AllowedPattern: (?!-)[a-zA-Z0-9-.]{1,63}(?<!-)
+    ConstraintDescription: must be a valid DNS zone name.
+  AcmCertificateArn:
+    Type: String
+    Default: arn:aws:acm:us-east-1:305167691271:certificate/aa0dad8d-1fb9-45fb-84b4-67501e79ba2a
+    Description: the Amazon Resource Name (ARN) of an AWS Certificate Manager (ACM) certificate.
+    AllowedPattern: "arn:aws:acm:.*"
+
 Resources:
   PostApi:
     Type: AWS::Serverless::Api
@@ -13,7 +32,7 @@ Resources:
       StageName: prod
       Domain:
         DomainName: api.scotty.dance
-        CertificateArn: arn:aws:acm:us-east-1:305167691271:certificate/aa0dad8d-1fb9-45fb-84b4-67501e79ba2a
+        CertificateArn: !Ref AcmCertificateArn
 
   StartServer:
     Type: AWS::Serverless::Function
@@ -175,5 +194,77 @@ Resources:
   MediaBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: media-scotty-dot-dance
+      BucketName:
+        !Join
+          - ''
+          - - 'media.'
+            - !Ref ScottyDomainName
       AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+    DeletionPolicy: Retain
+
+  MediaReadPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref MediaBucket
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action:
+              - 's3:GetObject'
+            Resource:
+              !Join
+                - ''
+                - - 'arn:aws:s3:::'
+                  - !Ref MediaBucket
+                  - '/*'
+            Principal: '*'
+
+  MediaCloudfront:
+    Type: AWS::CloudFront::Distribution
+    DependsOn:
+    - MediaBucket
+    Properties:
+      DistributionConfig:
+        Comment: Cloudfront Distribution pointing to S3 bucket
+        Origins:
+        - DomainName: !Select [2, !Split ["/", !GetAtt MediaBucket.WebsiteURL]]
+          Id: S3Origin
+          CustomOriginConfig:
+            HTTPPort: '80'
+            HTTPSPort: '443'
+            OriginProtocolPolicy: http-only
+        Enabled: true
+        HttpVersion: 'http2'
+        DefaultRootObject: index.html
+        Aliases:
+        - !Ref MediaBucket
+        DefaultCacheBehavior:
+          AllowedMethods:
+          - GET
+          - HEAD
+          Compress: true
+          TargetOriginId: S3Origin
+          ForwardedValues:
+            QueryString: true
+            Cookies:
+              Forward: none
+          ViewerProtocolPolicy: redirect-to-https
+        PriceClass: PriceClass_All
+        ViewerCertificate:
+          AcmCertificateArn: !Ref AcmCertificateArn
+          SslSupportMethod: sni-only
+
+  WebsiteDNSName:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneName: !Join ['', [!Ref ScottyDomainName, .]]
+      RecordSets:
+      - Name: !Ref MediaBucket
+        Type: A
+        AliasTarget:
+          HostedZoneId: Z2FDTNDATAQYW2
+          DNSName: !GetAtt [MediaCloudfront, DomainName]
