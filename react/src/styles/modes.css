@@ -34,7 +34,11 @@ body {
 
 .post img {
   max-width: 100%;
+  max-height: 600px;
+  margin: 0 auto;
+  display: inherit;
   height: auto;
+  width: auto;
 }
 
 .post pre {
@@ -46,9 +50,13 @@ body {
 }
 
 .post blockquote {
-  margin-left: 40px;
+  width: 90%;
+  font-weight: lighter;
+  margin: 0 auto;
   padding-left: 15px;
   border-left: 3px solid #ccc;
+  font-style: italic;
+  color: #4a4a4a;
 }
 
 .audio-player {
