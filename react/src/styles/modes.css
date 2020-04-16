@@ -32,7 +32,7 @@ body {
   margin-bottom: .5em;
 }
 
-.post img {
+.post img, video {
   max-width: 100%;
   max-height: 600px;
   margin: 0 auto;
@@ -51,6 +51,7 @@ body {
 
 .post h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5em;
+  text-align: center;
 }
 
 .post blockquote {
@@ -63,6 +64,7 @@ body {
   border-left: 3px solid #ccc;
   font-style: italic;
   color: #4a4a4a;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .audio-player {
@@ -76,7 +78,6 @@ body {
   padding-right: 1em;
   padding-top: .5em;
   padding-bottom: .5em;
-  font-weight: bold;
 }
 
 .audio-player audio {
