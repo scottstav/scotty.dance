@@ -50,13 +50,15 @@ body {
 }
 
 .post h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 
 .post blockquote {
   width: 90%;
   font-weight: lighter;
   margin: 0 auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
   padding-left: 15px;
   border-left: 3px solid #ccc;
   font-style: italic;
