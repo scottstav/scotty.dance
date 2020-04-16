@@ -49,6 +49,10 @@ body {
   padding: 1em 1em 1em 1em;
 }
 
+.post h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1em;
+}
+
 .post blockquote {
   width: 90%;
   font-weight: lighter;
