@@ -55,7 +55,9 @@ body {
 }
 
 .post blockquote {
-  width: 90%;
+  max-width: 90%;
+  width: auto;
+  display: table;
   font-weight: lighter;
   margin: 0 auto;
   margin-bottom: 2em;
