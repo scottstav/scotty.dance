@@ -191,6 +191,12 @@ Resources:
       VersioningConfiguration:
         Status: Enabled
 
+
+  OrgBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: scottstav-org-files
+
   MediaBucket:
     Type: AWS::S3::Bucket
     Properties:
