@@ -2,7 +2,7 @@ require 'aws-sdk-s3'
 
 module S3Helper
 
-  POSTS_BUCKET_NAME = 'posts-scotty-dot-dance'
+  POSTS_BUCKET_NAME = 'posts.scotty.dance'
 
   def s3
     @s3 ||= Aws::S3::Resource.new
@@ -26,10 +26,6 @@ module S3Helper
     resp = bucket.object(self.object_key).get.body.read
     content = resp unless resp.nil? || resp.empty?
     content
-  end
-
-  def patherize(str)
-    str.downcase.gsub(/\s+/, '_').gsub(/[^a-z_0-9]/, '')
   end
 
 end

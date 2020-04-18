@@ -33,6 +33,8 @@ Resources:
       Domain:
         DomainName: api.scotty.dance
         CertificateArn: !Ref AcmCertificateArn
+        Route53:
+          HostedZoneName: !Join ['', [!Ref ScottyDomainName, .]]
 
   StartServer:
     Type: AWS::Serverless::Function
@@ -184,14 +186,6 @@ Resources:
           Projection:
             ProjectionType: ALL
 
-  PostsBucket:
-    Type: AWS::S3::Bucket
-    Properties:
-      BucketName: posts-scotty-dot-dance
-      VersioningConfiguration:
-        Status: Enabled
-
-
   OrgBucket:
     Type: AWS::S3::Bucket
     Properties:
@@ -200,10 +194,42 @@ Resources:
   MediaBucket:
     Type: AWS::S3::Bucket
     Properties:
+      CorsConfiguration:
+        CorsRules:
+          - AllowedMethods:
+              - GET
+              - HEAD
+            AllowedOrigins:
+              - "*"
+            AllowedHeaders:
+              - Authorization
       BucketName:
         !Join
           - ''
           - - 'media.'
+            - !Ref ScottyDomainName
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+    DeletionPolicy: Retain
+
+  PostsBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      CorsConfiguration:
+        CorsRules:
+          - AllowedMethods:
+              - GET
+              - HEAD
+            AllowedOrigins:
+              - "*"
+            AllowedHeaders:
+              - Authorization
+      BucketName:
+        !Join
+          - ''
+          - - 'posts.'
             - !Ref ScottyDomainName
       AccessControl: PublicRead
       WebsiteConfiguration:
@@ -226,6 +252,24 @@ Resources:
                 - ''
                 - - 'arn:aws:s3:::'
                   - !Ref MediaBucket
+                  - '/*'
+            Principal: '*'
+
+  PostsReadPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref PostsBucket
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action:
+              - 's3:GetObject'
+            Resource:
+              !Join
+                - ''
+                - - 'arn:aws:s3:::'
+                  - !Ref PostsBucket
                   - '/*'
             Principal: '*'
 
@@ -255,7 +299,11 @@ Resources:
           Compress: true
           TargetOriginId: S3Origin
           ForwardedValues:
-            QueryString: true
+            QueryString: false
+            Headers:
+              - Access-Control-Request-Headers
+              - Access-Control-Request-Method
+              - Origin
             Cookies:
               Forward: none
           ViewerProtocolPolicy: redirect-to-https
@@ -264,7 +312,7 @@ Resources:
           AcmCertificateArn: !Ref AcmCertificateArn
           SslSupportMethod: sni-only
 
-  WebsiteDNSName:
+  MediaDNSName:
     Type: AWS::Route53::RecordSetGroup
     Properties:
       HostedZoneName: !Join ['', [!Ref ScottyDomainName, .]]
@@ -274,3 +322,53 @@ Resources:
         AliasTarget:
           HostedZoneId: Z2FDTNDATAQYW2
           DNSName: !GetAtt [MediaCloudfront, DomainName]
+
+  PostsCloudfront:
+    Type: AWS::CloudFront::Distribution
+    DependsOn:
+    - PostsBucket
+    Properties:
+      DistributionConfig:
+        Comment: Cloudfront Distribution pointing to S3 bucket
+        Origins:
+        - DomainName: !Select [2, !Split ["/", !GetAtt PostsBucket.WebsiteURL]]
+          Id: S3Origin
+          CustomOriginConfig:
+            HTTPPort: '80'
+            HTTPSPort: '443'
+            OriginProtocolPolicy: http-only
+        Enabled: true
+        HttpVersion: 'http2'
+        DefaultRootObject: index.html
+        Aliases:
+        - !Ref PostsBucket
+        DefaultCacheBehavior:
+          AllowedMethods:
+          - GET
+          - HEAD
+          Compress: true
+          TargetOriginId: S3Origin
+          ForwardedValues:
+            QueryString: false
+            Headers:
+              - Access-Control-Request-Headers
+              - Access-Control-Request-Method
+              - Origin
+            Cookies:
+              Forward: none
+          ViewerProtocolPolicy: redirect-to-https
+        PriceClass: PriceClass_All
+        ViewerCertificate:
+          AcmCertificateArn: !Ref AcmCertificateArn
+          SslSupportMethod: sni-only
+
+  PostsDNSName:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneName: !Join ['', [!Ref ScottyDomainName, .]]
+      RecordSets:
+      - Name: !Ref PostsBucket
+        Type: A
+        AliasTarget:
+          HostedZoneId: Z2FDTNDATAQYW2
+          DNSName: !GetAtt [PostsCloudfront, DomainName]

@@ -16,9 +16,6 @@ class Post < BaseAppRecord
   global_secondary_index name: 'post_type-index', hash_key: :post_type, projected_attributes: :all
 
   validates_presence_of :title
+  validates_format_of :object_key, with: /\A[a-zA-Z0-9_-]*\.md\z/, message: 'Filename must be url safe and end with .md.'
 
-  before_create do
-    self.object_key = patherize title
-    touch_object
-  end
 end

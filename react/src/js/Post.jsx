@@ -1,9 +1,35 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import '../styles/modes.css';
 import ReactMarkdown from "react-markdown";
+import Spinner from 'react-bootstrap/Spinner';
+import '../styles/modes.css';
 
 class Post extends Component {
+  constructor() {
+    super();
+    this.state = {isLoaded: false}
+  }
+
+  componentDidMount() {
+    let postId = this.props.postId ? this.props.postId : this.props.match.params.postId;
+    //let post = this.props.posts.filter(function(p) { return p.object_key == postId; })[0];
+    fetch(`https://posts.scotty.dance/${postId}`)
+      .then(response => response.text())
+      .then(
+        (data) => {
+          this.setState({
+            isLoaded: true,
+            markdown: data,
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true
+          });
+	  console.log(error);
+        }
+      )
+  }
 
   getFileExtension(s) {
     let patt1 = /\.([0-9a-z]+)(?:[\?#]|$)/i;
@@ -15,8 +41,15 @@ class Post extends Component {
   }
 
   render() {
-    let postId = this.props.postId ? this.props.postId : this.props.match.params.postId;
-    let post = this.props.posts.filter(function(p) { return p.object_key == postId; })[0];
+
+    if (!this.state.isLoaded) {
+      return (
+	<Spinner animation="border" role="status">
+	  <span className="sr-only">Loading...</span>
+	</Spinner>
+      )
+    }
+
     const renderers = {
       code: (props) => {
 	return(
@@ -75,7 +108,7 @@ class Post extends Component {
 	</div>
 	<hr/>
 	<div className={"post"}>
-	  <ReactMarkdown source={post.markdown} renderers={renderers}/>
+	  <ReactMarkdown source={this.state.markdown} renderers={renderers}/>
 	</div>
       </div>
     );

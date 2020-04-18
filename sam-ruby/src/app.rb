@@ -8,33 +8,33 @@ module PostController
 
   def self.create(event:, context:)
     post_title = JSON.parse(event['body'])['title']
+    filename = JSON.parse(event['body'])['filename']
 
-    return lambda_response(statusCode: 400, body: {message: 'Unable to create post. Check your request'}) if !post_title
+    return lambda_response(statusCode: 400, body: {message: 'Unable to create post. Check your request'}) if !post_title || !filename
     posts = Post.where(title: post_title)
     if posts.count != 0
       return lambda_response(statusCode: 200, body: {message: 'That title already exists.'})
     end
+    posts = Post.where(object_key: filename)
+    if posts.count != 0
+      return lambda_response(statusCode: 200, body: {message: 'A file with this name is already posted. Move this copy to the public folder to update.'})
+    end
 
-    post = Post.new title: post_title
-    return lambda_response(statusCode: 500, body: {message: 'Failed to save.'}) unless post.save
-
-    lambda_response(
-      statusCode: 200,
-      body: {
-        id: post.id
-      }
-    )
-  end
-
-  def self.edit(event:, context:)
-    id = event.dig('pathParameters', 'id')
-    return lambda_response(statusCode: 401, body: {message: 'Please pass id  to edit.'}) unless id
-    post = Post.find(id)
+    post = Post.new title: post_title, object_key: filename
+    return lambda_response(statusCode: 500, body: {message: "#{filename} does not yet exist in S3, have you moved it to the public folder?"}) if post.get_object_content.nil? || post.get_object_content.empty?
+    begin
+      post.save
+    rescue => e
+      return lambda_response(statusCode: 500, body: {message: e.message})
+    end
 
     lambda_response(
       statusCode: 200,
       body: {
-        put_url: post.signed_put_url
+        id: post.id,
+        filename: filename,
+        title: title,
+        message: "Successfully published file #{filename} with title #{title}."
       }
     )
   end
@@ -56,16 +56,11 @@ module PostController
     id = event.dig('pathParameters', 'id')
     if id
       post = Post.find(id)
-      post.markdown = post.get_object_content
       return lambda_response(statusCode: 200, body: { post: post })
     end
 
     begin
       posts = Post.where(post_type: Post::POST_TYPE_DEFAULT).all
-      r = posts.map { |p|
-        p.markdown = p.get_object_content
-        p
-      }
     rescue StandardError => error
       puts "get_posts failed with the following error: #{error.message}"
       return lambda_response(statusCode: 500, body: {message: error.message})
@@ -73,7 +68,7 @@ module PostController
 
     lambda_response(
       statusCode: 200,
-      body: { posts: r }
+      body: { posts: posts }
     )
   end
 
