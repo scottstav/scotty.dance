@@ -21,12 +21,10 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    console.log(`Fetching posts from ${process.env.API_URL}`);
     fetch(`${process.env.API_URL}/posts`)
       .then(res => res.json())
       .then(
         (result) => {
-	  console.log("Loaded content");
           this.setState({
             isLoaded: true,
             posts: result.posts,
@@ -42,7 +40,6 @@ class Home extends Component {
   }
 
   render() {
-
     return (
       <div>
 	<Socials/>

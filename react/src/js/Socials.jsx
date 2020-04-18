@@ -21,7 +21,7 @@ class Socials extends Component {
 	<div><a href="https://twitter.com/awkwardnessful"><i className="fab fa-twitter"></i></a></div>
 	<div><a href="https://keybase.io/scottstav"><i className="fab fa-keybase"></i></a></div>
 	<div><a href="https://www.linkedin.com/in/scottstav/"><i className="fab fa-linkedin"></i></a></div>
-	<div><a href="https://untappd.com/user/scottstav"><i class="fab fa-untappd"></i></a></div>
+	<div><a href="https://untappd.com/user/scottstav"><i className="fab fa-untappd"></i></a></div>
 	<div>{iMessageLink}</div>
       </div>
     );
