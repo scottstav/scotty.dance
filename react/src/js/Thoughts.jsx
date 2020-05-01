@@ -10,14 +10,6 @@ import About from "./About.jsx";
 
 class Thoughts extends Component {
 
-  componentDidMount() {
-    PR.prettyPrint();
-  }
-
-  componentDidUpdate() {
-    PR.prettyPrint();
-  }
-
   render() {
     if (!this.props.isLoaded) {
       return (

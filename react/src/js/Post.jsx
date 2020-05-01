@@ -10,6 +10,10 @@ class Post extends Component {
     this.state = {isLoaded: false}
   }
 
+  componentDidUpdate() {
+    PR.prettyPrint();
+  }
+
   componentDidMount() {
     let postId = this.props.postId ? this.props.postId : this.props.match.params.postId;
     //let post = this.props.posts.filter(function(p) { return p.object_key == postId; })[0];
@@ -29,6 +33,7 @@ class Post extends Component {
 	  console.log(error);
         }
       )
+    PR.prettyPrint();
   }
 
   getFileExtension(s) {
@@ -41,7 +46,6 @@ class Post extends Component {
   }
 
   render() {
-
     if (!this.state.isLoaded) {
       return (
 	<Spinner animation="border" role="status">
