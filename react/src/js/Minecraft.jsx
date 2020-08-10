@@ -103,6 +103,8 @@ class Minecraft extends Component {
 
       return (
 	<div >
+	  <span style={{textAlign: "center", backgroundColor: "black", color: "red"}}>1.16!</span>
+	  <br/>
 	  <div style={{ display: "inline-block", textAlign: "left"}}>
 	    {serverAddress}
 	    {status}
