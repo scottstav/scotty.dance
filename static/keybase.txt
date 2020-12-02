@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/scottstav
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://scotty.dance
+  * I am scottstav (https://keybase.io/scottstav) on keybase.
+  * I have a public key with fingerprint 81F4 AB2B 87EC B636 2B33  7388 7809 CBD5 1DBD 7E58
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01017df63e7921317b5e89e2479f6f637f7189cab550f30ddda956a024b4c2b228d00a",
+      "fingerprint": "81f4ab2b87ecb6362b3373887809cbd51dbd7e58",
+      "host": "keybase.io",
+      "key_id": "7809cbd51dbd7e58",
+      "kid": "01017df63e7921317b5e89e2479f6f637f7189cab550f30ddda956a024b4c2b228d00a",
+      "uid": "b98945ec2770d70b262b0d01d68d9919",
+      "username": "scottstav"
+    },
+    "service": {
+      "hostname": "scotty.dance",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1584511080,
+  "expire_in": 157680000,
+  "prev": "3dcf282fc14097d98685d48873aa7787e9ebdfd304a7109da7ba9df6e64ff7b6",
+  "seqno": 18,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMImAnicrVJbSBVBGD52OZJhRUIXIoRNu3lh9jqzRy0iEsIsuhiF5mlnZ/a4qbvH
+s3tOnW5khYhUQiVkZCZFFGaaFSkZnEK6R1ARUUF2eQhF6iGql7JZKeihx+ZlmP//
+vm++/5vpTx3rS0lKu5w22HX10KykBzebo77ymp6KHRy2SZwL7OAq6ehGqwh13GCl
+SbgAB3jAQ2IoIoWqwIs8xDJFKhUkqBoKK0MD8kjVNSzLwBABIURTZUUDgoQlXcCC
+gAgAGpfNGaYVopFwxLRcJot4Q9KwgBGkOlZERcCiCEWEIAKqjonME0wglREjVtiO
+x2DmsObQXNNmNXYIjtr7B/4/+46OymEVqZJMdQFCQCDAAnMMCOCJgoiq8qoHdGjE
+0qopQzu67bqOq8W4XdkcK8dMnXrJeqP8DYnnEs1irWwuHLFdW7erWKfCdcNOwGO6
+8bAH3Upx8LdIEJsWYUEyRoxGHNO2uADPkLpreqq8jCSZ5wEC2RzdFjYjNGh6CBkq
+CLDl3UNjTFIkuiEgwdB5CaiQqEhBMpFY/KKmQcgeRaWYGEQEkgZ5oBINYk1laVJF
+MgyIFc4bq8aymTZiPrWQN5EZsjQ3GqHcrluJsnG+pBSff/wY74f5UiZM+fPv2hYn
+j5Q7Xz5veJZ1N8+f3vwqUfmwyRHSt+1Nbl9yOnSl1CfmfC8umjfn5/XMnPikhVtc
+S3nc2Tjd9nX3tqWVn9hPe5c3POo+VRh4u72+5b3QmKbYwgublP04ri88gicuuL3s
+wNqa/H2TMwomnTn61T/cVNgy23/n00AwZ+fAkBlf0pFYe3P4zbzFLbjk3FL3Y8G0
+0peleOrI2dAWfwK6STX5+et2V9ffb/0wsyfz4ppL7vC1xLHB1e8yFt17GqgqPlj7
+pH1zszSjMN4R39M1f8Wbuthhubbk2/PpJxu6iyKJhgsrV43pT81rrcvqI8LrouhQ
+7Uh/a+ePG+ejm4yUjX2bX83NWP8L+kM8uA==
+=yHlK
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/scottstav
+
+==================================================================
