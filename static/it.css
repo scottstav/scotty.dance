@@ -4,6 +4,8 @@ body {
     margin: 0 auto;
     max-width: 800px;
     font-size: 116%;
+    padding: 2% 2% 2% 2%;
+    text-align: center;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -11,6 +13,16 @@ body {
 	max-width: none;
 	font-size: small;
     }
+
+    img {
+	max-width: 50%;
+    }
+}
+
+img {
+    border-radius: 50%;
+    max-width: 30%;
+    height: auto;
 }
 
 .title {
@@ -71,5 +83,7 @@ li {
     position: relative;
     bottom: 0;
     font-size: 70%;
-
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
 }

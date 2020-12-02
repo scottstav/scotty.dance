@@ -3,9 +3,9 @@
 #+TITLE: :]
 #+OPTIONS: title:nil
 #+OPTIONS: toc:nil
-#+DATE: <2020-11-27 Fri>
+#+DATE: <2020-11-28 Tue>
 
-* Hey, this is Scott 📞
-👇 Find me online 👇
+[[./media/roses.png]]
+* Hi, this is Scott 📞
 
 [[mailto:howdy@scotty.dance][email]] | [[https://github.com/scottstav][github]] | [[https://keybase.io/scottstav][keybase]] | [[https://untappd.com/user/scottstav][untappd]]
