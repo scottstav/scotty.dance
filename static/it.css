@@ -8,17 +8,6 @@ body {
     text-align: center;
 }
 
-@media only screen and (max-device-width: 480px) {
-    body {
-	max-width: none;
-	font-size: small;
-    }
-
-    img {
-	max-width: 50%;
-    }
-}
-
 img {
     border-radius: 50%;
     max-width: 30%;
@@ -86,4 +75,20 @@ li {
     margin: 0 auto;
     display: inline-block;
     text-align: left;
+    font-size: small;
+}
+
+#content {
+    height: 90vh;
+}
+
+@media only screen and (max-device-width: 480px) {
+    body {
+	max-width: none;
+	font-size: large;
+    }
+
+    img {
+	max-width: 65%;
+    }
 }
