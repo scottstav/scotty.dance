@@ -6,6 +6,16 @@
 #+DATE: <2020-11-28 Tue>
 
 [[./media/roses.png]]
+
 * Hi, this is Scott 📞
 
 [[mailto:howdy@scotty.dance][email]] | [[https://github.com/scottstav][github]] | [[https://keybase.io/scottstav][keybase]] | [[https://untappd.com/user/scottstav][untappd]]
+
+---
+
+
+
+#+begin_monero
+[[./media/monero.png][Monero]]
+47VLXuEujVLDhz73PYgfQwUTm9htkL5S8Ge1TsdrmgrxPLL8fxxpZWjXUFRa3k5wqCY6WxuDKZJDzax7dE6V79ZVJz7W27S
+#+end_monero
