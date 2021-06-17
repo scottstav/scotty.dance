@@ -9,13 +9,10 @@
 
 * Hi, this is Scott 📞
 
-[[mailto:howdy@scotty.dance][email]] | [[https://github.com/scottstav][github]] | [[https://keybase.io/scottstav][keybase]] | [[https://untappd.com/user/scottstav][untappd]]
+[[mailto:howdy@scotty.dance][email]] · [[https://github.com/scottstav][github]] · [[https://keybase.io/scottstav][keybase]]
+
+[[https://untappd.com/user/scottstav][untappd]] · [[https://www.strava.com/athletes/scottstav][strava]] · [[./posts/wallets.org][$support$]]
 
 ---
 
-
-
-#+begin_monero
-[[./media/monero.png][Monero]]
-47VLXuEujVLDhz73PYgfQwUTm9htkL5S8Ge1TsdrmgrxPLL8fxxpZWjXUFRa3k5wqCY6WxuDKZJDzax7dE6V79ZVJz7W27S
-#+end_monero
+[[./posts/index.org][posts]]

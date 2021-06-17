@@ -1,0 +1,26 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../it.css"/>
+#+HTML_LINK_HOME: https://scotty.dance
+#+TITLE: scottstav/support
+#+OPTIONS: title:nil
+#+OPTIONS: toc:nil
+#+OPTIONS: html-postamble:nil
+#+DATE: <2020-11-28 Tue>
+
+* Support
+** USD
+[[https://paypal.me/scottstavinoha][paypal]] | [[https://www.venmo.com/u/scottstav][venmo]] | [[../media/cashapp.png][cashapp]]
+** Monero (XMR)
+
+#+begin_monero
+47VLXuEujVLDhz73PYgfQwUTm9htkL5S8Ge1TsdrmgrxPLL8fxxpZWjXUFRa3k5wqCY6WxuDKZJDzax7dE6V79ZVJz7W27S
+
+[[../media/monero.png]]
+#+end_monero
+
+** Bitcoin (BTC)
+
+#+begin_monero
+1Bqm8Z2C4YRckMAjHyw4pGxfBLbac1wxjH
+
+[[../media/btc.png]]
+#+end_monero

@@ -50,19 +50,18 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.monero {
-    padding-top: 50px;
-}
-
 .monero > a {
     border-style: none;
 }
 
 .monero > p {
-    border-style: dotted;
-    overflow: hidden;
-    white-space: nowrap;
     font-size: medium;
+}
+
+.monero img {
+    border-radius: unset;
+    max-width: 30%;
+    height: auto;
 }
 
 a {

@@ -1,0 +1,15 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../it.css"/>
+#+HTML_LINK_HOME:
+#+TITLE: :]/posts/amanuensis
+#+OPTIONS: title:nil
+#+OPTIONS: toc:nil
+#+DATE: <2020-11-28 Tue>
+
+* Milan Kundera on Weakness
+#+BEGIN_QUOTE
+It was vertigo. A heady, insuperable longing to fall. We might also call vertigo
+the intoxication of the weak. Aware of his weakness, a man decides to give in
+rather than stand up to it. He is drunk with weakness, wishes to grow even
+weaker, wishes to fall down in the middle of the main square in front of
+everybody, wishes to be down, lower than down.
+#+END_QUOTE
