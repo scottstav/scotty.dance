@@ -15,4 +15,4 @@
 
 ---
 
-[[./posts/wallets.org][$support$]]
+[[./posts/wallets.org][$$]]
