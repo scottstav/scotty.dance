@@ -12,7 +12,3 @@
 [[mailto:howdy@scotty.dance][email]] · [[https://github.com/scottstav][github]] · [[https://keybase.io/scottstav][keybase]]
 
 [[https://untappd.com/user/scottstav][untappd]] · [[https://www.strava.com/athletes/scottstav][strava]]
-
----
-
-[[./posts/wallets.org][$$]]
